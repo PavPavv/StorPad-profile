@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>StorPad</title>
+    <link rel="shortcut icon" href="i/icon/page-ic.png" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--ASIDE MENU-PANEL-->
+      <aside class="aside">
+        <div class="logo">
+          <a href="#">
+            <img src="i/general/logo-account.png" alt="logo" class="logo-img">
+          </a>
+        </div>
+        <ul id="menu">
+          <li class="item-active">Dashboard</li>
+          <li>Orders</li>
+          <li>Customers</li>
+          <li>Products</li>
+          <li>Display</li>
+          <li>Marketing</li>
+        </ul>
+        <div class="options">
+          <div class="options-ic">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="options-descr">Settings</div>
+        </div>
+      </aside>
+      <!--DATA SPACE-->
+      <div class="wrapper">
+        <!--HEADER-->
+        <header>
+          <div class="user-icon"></div>
+          <div class="user-name">Ольга Кунст</div>
+          <div class="notification"></div>
+        </header>
+        <!--DATA PANEL-->
+        <section class="data">
+          <!--MODAL WINDOW-->
+          <div id="modal" class="modal">
+            <div class="modalWrap">
+              <h3>Чтобы продолжить, пожалуйста, заполните ваш профиль</h3>
+              <form>
+                <div>
+                  <input type="text">
+                  <label>Имя*</label>
+                </div>
+                <div>
+                  <input type="text">
+                  <label>Фамилия*</label>
+                </div>
+                <div>
+                  <input type="text">
+                  <label>Телефон*</label>
+                </div>
+                <div>
+                  <input type="email">
+                  <label>Email*</label>
+                </div>
+                <button>Заполнить</button>
+              </form>
+            </div>
+          </div>
+          <div class="dataTop">
+            <h1>Рабочий стол</h1>
+            <div>
+              <div class="topPanel">Показать: <span>еденицы</span></div>
+              <div class="set-ic"></div>                 
+            </div>
+          </div>
+          <div class="dataMain">
+            <!--all statistics-->
+            <div class="col_2">
+              <div class="col wrap col_space">
+                <!--Orders status-->
+                <div class="col">
+                  <div class="block block0">
+                    <div class="header">
+                      <h2>Статус заказов</h2>
+                    </div>
+                    <img src="i/content/chart.png" alt="">   
+                  </div>
+                </div>
+                <!--Display orders distribution-->
+                <div class="col">
+                  <div class="block block1">
+                    <div class="header">
+                      <h2>Распределение заказов по дисплеям</h2>
+                      <div>
+                        <div class="topPanel">Показать: <span>этот месяц</span></div>
+                        <div class="set-ic"></div>
+                      </div>
+                    </div>
+                    <img src="i/content/chart1.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="block block2">
+                  <div class="header">
+                    <h2>Заказы и оплата</h2>
+                    <div>
+                      <div class="topPanel">Показать: <span>этот месяц</span></div>
+                      <div class="set-ic"></div>
+                    </div>
+                  </div>
+                  <img src="i/content/chart2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!--Table block-->
+            <div class="col_1">
+              <div class="block block3">
+                <div class="header">
+                  <h2>Распределение заказов по дисплеям</h2>
+                  <div>
+                    <div class="topPanel">Показать: <span>этот месяц</span></div>
+                    <div class="set-ic"></div>
+                  </div>
+                </div>
+                <div class="table">
+                  <table cellspacing="0" >
+                    <thead>
+                      <tr>
+                        <th>Order ID</th>
+                        <th>Сумма</th>
+                        <th>Итого</th>
+                        <th>Статус заказа</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#12358</td>
+                        <td>88 487,00</td>
+                        <td>68 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>58 487,00</td>
+                        <td>58 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="refund">Возврат</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>14 100,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>14 900,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="done">Завершено</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="canceled">Отмена</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="canceled">Отмена</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="canceled">Отмена</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="refund">Возврат</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="refund">Возврат</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>14 487,00</td>
+                        <td>14 487,00</td>
+                        <td class="done">Завершено</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="ontheway">В пути к клиенту</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="done">Завершено</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="done">Завершено</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="ontheway">В пути к клиенту</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="ontheway">В пути к клиенту</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>88 487,00</td>
+                        <td>68 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>58 487,00</td>
+                        <td>58 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="refund">Возврат</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>14 100,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>14 900,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="done">Завершено</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="canceled">Отмена</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="canceled">Отмена</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="canceled">Отмена</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="refund">Возврат</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="refund">Возврат</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>14 487,00</td>
+                        <td>14 487,00</td>
+                        <td class="done">Завершено</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="ontheway">В пути к клиенту</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="done">Завершено</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="done">Завершено</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="ontheway">В пути к клиенту</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>13 487,00</td>
+                        <td class="ontheway">В пути к клиенту</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                      <tr>
+                        <td>#12358</td>
+                        <td>15 487,00</td>
+                        <td>15 487,00</td>
+                        <td class="waiting">Ожидает подтверждения</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <script src="js/main.js"></script>
+  </body>
+</html>
