@@ -875,6 +875,102 @@ form div label{
     color: #358ED7;
     cursor: pointer;
 }
+/************* ORDERS ***********/
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.numbers > * {
+    margin-right: 1.5vw;
+}
+.numbers:last-child{
+    margin-right: 0;
+}
+
+.number{
+    flex-direction: column;
+    border: 2px solid #9C9C9C;
+    border-radius: 4px;
+    padding: 0.4vw 0.8vw;
+}
+.numHeader{
+    font-family: 'Gilroy_SemiBold';
+    font-size: 0.8125em;
+    line-height: 0.9375em;
+    letter-spacing: 0.81px;
+    margin-bottom: 1.4vw;
+}
+.numBody{
+    display: flex;
+}
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    height: 3vw;
+    margin-right: 4vw;
+    flex-direction: column;
+}
+.quantity > div:first-child{
+    font-family: 'Gilroy_Regular';
+    font-size: 0.6875em;
+    color: #9C9C9C;
+}
+.quantity > div:last-child{
+    font-family: 'Gilroy_Bold';
+    font-size: 2.3174em;
+    color: #9C9C9C;
+    line-height: 1em;
+    letter-spacing: 1.37px;
+}
+.sum{
+    height: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sum > div:first-child{
+    font-family: 'Gilroy_Regular';
+    font-size: 0.6875em;
+    color: #9C9C9C;
+}
+.sum > div:last-child{
+    font-family: 'Gilroy_Bold';
+    font-size: 1.0625em;
+    color: #9C9C9C;
+    letter-spacing: 1.7px;
+}
+
+.total{
+    border-color: #8C7F98;
+    color:#8C7F98;
+}
+.totalColor{
+    color:#8C7F98!important;
+}
+
+.wait{
+    border-color: #F96E7C;
+    color:#F96E7C!important;
+}
+.waitColor{
+    color:#F96E7C!important;
+}
+
+.refunding{
+    border-color: #F79D0F;
+    color: #F79D0F!important;
+}
+.refundingColor{
+    color: #F79D0F!important;
+}
+
+.onthewayto{
+    border-color: #27BE87;
+    color: #27BE87!important;
+}
+.onthewaytoColor{
+    color: #27BE87!important;
+}
 
 
 
@@ -1098,7 +1194,27 @@ form div label{
     .bodyNotify{
         height: 45.9687vw;
     }
+    /* .quantity > div:last-child{
+        font-size: 1.3174em;
+        line-height: 1em;
+        letter-spacing: 1.37px;
+    }
+    .sum > div:last-child{
+        font-size: 0.8125em;
+        letter-spacing: 1.7px;
+    } */
 }
+/* @media(max-width: 1144px) {
+    .quantity > div:last-child{
+        font-size: 1.1174em;
+        line-height: 1em;
+        letter-spacing: 1.37px;
+    }
+    .sum > div:last-child{
+        font-size: 0.6125em;
+        letter-spacing: 1.7px;
+    }
+} */
 @media(max-width: 1010px) {
      body{
         font-size: 13px;

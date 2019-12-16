@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StorPad</title>
+    <link rel="shortcut icon" href="i/icon/page-ic.png" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!--ASIDE MENU-PANEL-->
+    <aside class="aside1">
+        <div class="logo">
+            <a href="#">
+                <img src="i/general/logo-account.png" alt="logo" class="logo-img">
+            </a>
+        </div>
+        <ul id="menu">
+            <li class="item-active">Dashboard</li>
+            <li>Orders</li>
+            <li>Customers</li>
+            <li>Products</li>
+            <li>Display</li>
+            <li>Marketing</li>
+        </ul>
+        <div class="options">
+            <div class="options-ic">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="options-descr">Settings</div>
+        </div>
+    </aside>
+    
+    <!--ASIDE MOBILE -->
+    <aside class="aside2">
+        <div class="logo">
+            <a href="#">
+                <img src="i/icon/page-ic.png" alt="logo" class="logo-img">
+            </a>
+        </div>
+        <ul class="menu">
+            <li class="item-active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="options">
+            <div class="options-ic">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="options-descr"></div>
+        </div>
+    </aside>
+    
+    <!--DATA SPACE-->
+    <div class="wrapper">
+        <!--HEADER-->
+        <header>
+            <div class="user-icon"></div>
+            <div class="user-name">Ольга Кунст</div>
+            <div class="notification"></div>
+        </header>
+        <!--DATA PANEL-->
+        <!--data header-->
+        <section class="data">
+            <!--MODAL WINDOW-->
+            <div id="modal" class="modal">
+                <div class="modalWrap">
+                    <h3>Чтобы продолжить, пожалуйста, заполните ваш профиль</h3>
+                    <form>
+                        <div>
+                            <input type="text">
+                            <label>Имя*</label>
+                        </div>
+                        <div>
+                            <input type="text">
+                            <label>Фамилия*</label>
+                        </div>
+                        <div>
+                            <input type="text">
+                            <label>Телефон*</label>
+                        </div>
+                        <div>
+                            <input type="email">
+                            <label>Email*</label>
+                        </div>
+                        <button id="btn">Заполнить</button>
+                    </form>
+                </div>
+            </div>
+            <!--NOTIFICATION WINDOW-->
+            <div id="modal1" class="modal1">
+                <div class="modalWrap1 notifyWrap">
+                    <div class="header headerNotify">
+                        <div class="notifyInner">
+                            <div class="notify-ic">
+                                <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.875 11.0769V11.2826L11.0197 11.4287L12.5 12.9236V13.0385H0.5V12.9236L1.98028 11.4287L2.125 11.2826V11.0769V6.97436C2.125 4.61799 3.34466 2.7662 5.3976 2.27499L5.78125 2.1832V1.78872V1.23077C5.78125 0.821248 6.10638 0.5 6.5 0.5C6.89362 0.5 7.21875 0.821248 7.21875 1.23077V1.78872V2.18288L7.60201 2.2749C9.64752 2.76604 10.875 4.62664 10.875 6.97436V11.0769ZM7.51026 14.859C7.32566 15.2388 6.93869 15.5 6.5 15.5C6.05637 15.5 5.6712 15.2393 5.48827 14.859H7.51026Z"
+                                        stroke="white" />
+                                </svg>
+                            </div>
+                            <div>Уведомления</div>
+                        </div>
+                        <div class="closeNotify"></div>
+                    </div>
+                    <div class="bodyNotify">
+                        <div class="notify">
+                            <div class="time"><span>2 часа</span> назад</div>
+                            <div class="message">Изменено время проведения встречи "Обсуждение вопросов по сайту StorPad.com с вашим
+                                участием
+                                17.10.2019 11:00, на 19.10.2019 11:00</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dataTop">
+                <h1>Рабочий стол</h1>
+                <div>
+                    <div class="topPanel">Показать: <span>еденицы</span></div>
+                    <div class="set-ic"></div>
+                </div>
+            </div>
+            <!--data numbers-->
+            <div class="numbers">
+                <div class="number total">
+                    <div class="numHeader">Всего в работе</div>
+                    <div class="numBody">
+                        <div class="quantity">
+                            <div class="totalColor">количество</div>
+                            <div class="totalColor">1 000</div>
+                        </div>
+                        <div class="sum">
+                            <div class="totalColor">сумма</div>
+                            <div class="totalColor">47 878 556 &#8381</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="number wait">
+                    <div class="numHeader">Ожидает подтверждения</div>
+                    <div class="numBody">
+                        <div class="quantity">
+                            <div class="waitColor">количество</div>
+                            <div class="waitColor">56</div>
+                        </div>
+                        <div class="sum">
+                            <div class="waitColor">сумма</div>
+                            <div class="waitColor">128 000 &#8381</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="number refunding">
+                    <div class="numHeader">Возврат</div>
+                    <div class="numBody">
+                        <div class="quantity">
+                            <div class="refundingColor">количество</div>
+                            <div class="refundingColor">89</div>
+                        </div>
+                        <div class="sum">
+                            <div class="refundingColor">сумма</div>
+                            <div class="refundingColor">56 000 &#8381</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="number onthewayto">
+                    <div class="numHeader">В пути к клиенту</div>
+                    <div class="numBody">
+                        <div class="quantity">
+                            <div class="onthewaytoColor">количество</div>
+                            <div class="onthewaytoColor">67</div>
+                        </div>
+                        <div class="sum">
+                            <div class="onthewaytoColor">сумма</div>
+                            <div class="onthewaytoColor">56 000 &#8381</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--NUMBERS TABLE-->
+            <div class="table">
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Display ID</th>
+                            <th>Order ID</th>
+                            <th>Дата заказа</th>
+                            <th>Клиент</th>
+                            <th>Сумма</th>
+                            <th>Скидка</th>
+                            <th>Итого</th>
+                            <th>Тип доставки</th>
+                            <th>Статус заказа</th>
+                        </tr>
+                        <tr>
+                            <th>Итого: <span>145 987,00</span></th>
+                            <th>Итого: <span>125 987,00</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>15%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="refund">Возврат</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>15%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>20%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="done">Завершено</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="canceled">Отмена</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="canceled">Отмена</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="canceled">Отмена</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="refund">Возврат</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="refund">Возврат</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="done">Завершено</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="ontheway">В пути к клиенту</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="done">Завершено</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="done">Завершено</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="ontheway">В пути к клиенту</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="ontheway">В пути к клиенту</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="refund">Возврат</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="done">Завершено</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="canceled">Отмена</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="canceled">Отмена</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="canceled">Отмена</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="refund">Возврат</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="refund">Возврат</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="done">Завершено</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="ontheway">В пути к клиенту</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="done">Завершено</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="done">Завершено</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="ontheway">В пути к клиенту</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="ontheway">В пути к клиенту</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td>10%</td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                        <tr>
+                            <td>SP43001-03</td>
+                            <td>#12358</td>
+                            <td>13.10.2019</td>
+                            <td>Сидоренко</td>
+                            <td>88 487,00</td>
+                            <td></td>
+                            <td>68 487,00</td>
+                            <td>pickup</td>
+                            <td class="waiting">Ожидает подтверждения</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    <script src="js/main.js"></script>    
+</body>
+</html>
