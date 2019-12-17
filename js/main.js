@@ -29,13 +29,15 @@ const showMenu = () => {
 		} */
 	}
 
-	if (windowSize > 801) {
+	if (windowSize > 801 && windowSize < 1572) {
 		menu.style.marginLeft = '0%';
 		wrapper.style.paddingLeft = '173px';
 	} else if (windowSize < 800) {
 		mobMenu.style.marginLeft = '0%';
 		menu.style.marginLeft = '-100%';
 		wrapper.style.paddingLeft = '30px';
+	} else if (windowSize > 1572) {
+		wrapper.style.paddingLeft = '11vw';
 	}
 };
 
