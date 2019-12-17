@@ -786,7 +786,7 @@ form div label{
     height: 27.9687vw;
     z-index: 7;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     padding: 3.125vw 3.125vw 2.625vw 3.125vw;
     background: #ffffff;
@@ -1009,6 +1009,9 @@ form div label{
     background: #8C7F98;
     cursor: pointer;
 }
+.table1 tr th:nth-child(5){
+    text-align: center;
+}
 .table1 tr th:first-child:after{
     content: '';
     display: block;
@@ -1062,7 +1065,7 @@ form div label{
     display: block;
     position: absolute;
     top: 47%;
-    left: 55px;
+    left: 160px;
     width: 0;
     height: 0;
     border-style: solid;
