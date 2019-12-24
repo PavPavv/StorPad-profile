@@ -1186,15 +1186,11 @@ form div label{
 }
 .custNum{
     font-size: 1.5em;
-   color: #7D8997; 
+    color: #7D8997; 
 }
 .numPercentage{
     margin-right: 1vw;
 }
-
-
-
-
 .customersTable{
     margin-top: 2vw;
     padding: 0.75vw 0 0 0;
@@ -1202,14 +1198,68 @@ form div label{
 .customersTable tr{
     width: 100%;
 }
-/* .customersTable th, td{
-    width: calc(100% / 14);
-} */
-.customersTable tr th{
+/* .customersTable tr th{
     border: 1px solid #000;
 }
 .customersTable tr td{
     border: 1px solid #000;
+} */
+.customersTable tr th:nth-child(2):after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 47%;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 3.5px 0 3.5px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.customersTable tr th:nth-child(3):after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 47%;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 3.5px 0 3.5px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.customersTable tr th:nth-child(4):after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 47%;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 3.5px 0 3.5px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.customersTable tr th:nth-child(10){
+    text-align: center;
+    background: #F79D0F;
+}
+.customersTable tr th:nth-child(11){
+    text-align: center;
+    background: #B9B9B9;
+}
+.customersTable tr th:nth-child(12){
+    text-align: center;
+    background: #D1D0D0;
+}
+.customersTable tr th:nth-child(13){
+    background: #F96E7D;
+}
+.customersTable tr th:last-child{
+    background: #48D2A0;
+}
+.customersTable tr td:first-child{
+    padding-right: 1vw;
 }
 .customersTable tr th:first-child,
 .customersTable tr td:first-child{
@@ -1225,11 +1275,11 @@ form div label{
 }
 .customersTable tr th:nth-child(4),
 .customersTable tr td:nth-child(4){
-    width: 10.7812vw;
+    width: 9.7812vw;
 }
 .customersTable tr th:nth-child(5),
 .customersTable tr td:nth-child(5){
-    width: 11.1458vw;
+    width: 10.5458vw;
 }
 .customersTable tr th:nth-child(6),
 .customersTable tr td:nth-child(6){
@@ -1245,15 +1295,15 @@ form div label{
 }
 .customersTable tr th:nth-child(9),
 .customersTable tr td:nth-child(9){
-    width: 3.54vw;
+    width: 4.04vw;
 }
 .customersTable tr th:nth-child(10),
 .customersTable tr td:nth-child(10){
-    width: 4.27vw;
+    width: 4.87vw;
 }
 .customersTable tr th:nth-child(11),
 .customersTable tr td:nth-child(11){
-    width: 4.27vw;
+    width: 4.67vw;
 }
 .customersTable tr th:nth-child(12),
 .customersTable tr td:nth-child(12){
@@ -1267,7 +1317,12 @@ form div label{
 .customersTable tr td:last-child{
     width: 7.3437vw;
 }
-
+.table1 tbody tr:hover{
+    background: rgba(128, 94, 174, 0.07);
+}
+.customersTable tbody tr:hover{
+    background: rgba(128, 94, 174, 0.07);
+}
 /***************************************************************************************************************************************/
 /* media queries */
 @media(max-width: 1572px) {
@@ -1551,6 +1606,84 @@ form div label{
         padding-left: 0;
         font-weight: bold;
     }
+    .customersTable{
+        overflow: hidden;
+        overflow-x: auto;
+    }
+    .customersTable thead,
+    .customersTable tbody{
+        width: 1166px;
+    }
+    .customersTable tr th:first-child,
+    .customersTable tr td:first-child{
+        width: 78px;
+    }
+    .customersTable tr th:nth-child(2),
+    .customersTable tr td:nth-child(2){
+        width: 65px;
+    }
+    .customersTable tr th:nth-child(3),
+    .customersTable tr td:nth-child(3){
+        width: 65px;
+    }
+    .customersTable tr th:nth-child(4),
+    .customersTable tr td:nth-child(4){
+        width: 123px;
+    }
+    .customersTable tr th:nth-child(5),
+    .customersTable tr td:nth-child(5){
+        width: 136px;
+    }
+    .customersTable tr th:nth-child(6),
+    .customersTable tr td:nth-child(6){
+        width: 59px;
+    }
+    .customersTable tr th:nth-child(7),
+    .customersTable tr td:nth-child(7){
+        width: 104px;
+    }
+    .customersTable tr th:nth-child(8),
+    .customersTable tr td:nth-child(8){
+        width: 49px;
+    }
+    .customersTable tr th:nth-child(9),
+    .customersTable tr td:nth-child(9){
+        width: 54px;
+    }
+    .customersTable tr th:nth-child(10),
+    .customersTable tr td:nth-child(10){
+        width: 66px;
+    }
+    .customersTable tr th:nth-child(11),
+    .customersTable tr td:nth-child(11){
+        width: 63px;
+    }
+    .customersTable tr th:nth-child(12),
+    .customersTable tr td:nth-child(12){
+        width: 67px;
+    }
+    .customersTable tr th:nth-child(13),
+    .customersTable tr td:nth-child(13){
+        width: 137px;
+    }
+    .customersTable tr th:last-child,
+    .customersTable tr td:last-child{
+        width: 102px;
+    }
+    .customersTable::-webkit-scrollbar{
+        width: 18px;
+        border-radius: 20px;
+    }
+    .customersTable::-webkit-scrollbar-track{
+        background: #EBECF9;
+    }
+    .customersTable::-webkit-scrollbar-thumb{
+        width: 24px;
+        background: #C3BDC8;
+        border: 6px solid #EBECF9;
+        border-radius: 16px;
+    }
+
 }
 @media(max-width: 1244px) {
     .numbersWrap{
@@ -1749,6 +1882,12 @@ form div label{
         padding-left: 6vw;
         padding-right: 18vw;
     }
+    .table1 tr td:nth-child(2),
+    .table1 tr td:nth-child(3),
+    .table1 tr td:nth-child(4) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 /* @media(min-width: 801px) {
     .aside1{
@@ -1815,6 +1954,20 @@ form div label{
         top: 43%;
         width: 5px;
         height: 5px;
+    }
+     .customersTable::-webkit-scrollbar{
+        width: 10px;
+        border-radius: 20px;
+    }
+    .customersTable::-webkit-scrollbar-track{
+        width: 10px;
+        background: #EBECF9;
+    }
+    .customersTable::-webkit-scrollbar-thumb{
+        width: 10px;
+        background: #C3BDC8;
+        border: 7px solid #EBECF9;
+        border-radius: 16px;
     }
 }
 @media (max-width: 700px) {
