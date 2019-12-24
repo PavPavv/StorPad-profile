@@ -5,9 +5,15 @@ const showMenu = () => {
 	const mobMenu = document.querySelector('.aside2');
 	const menu = document.querySelector('.aside1');
 	const wrapper = document.querySelector('.wrapper');
+	const closeMenu = document.querySelector('.closeMenu');
 	const windowSize = document.documentElement.clientWidth;
 
 	//console.log(mobMenu);
+	closeMenu.addEventListener('click', function() {
+		menu.style.marginLeft = '-100%';
+		wrapper.style.paddingLeft = '30px';
+		mobMenu.style.marginLeft = '0%';
+	});
 	mobMenu.addEventListener("mouseover", func, false);
 	function func() {
 		if (window.innerWidth < 800) {
