@@ -937,7 +937,7 @@ form div label{
     font-size: 0.6875em;
     color: #9C9C9C;
 }
-.quantity > div:last-child{
+.quantity > div:nth-child(2){
     font-family: 'Gilroy_Bold';
     font-size: 2.3174em;
     color: #9C9C9C;
@@ -955,7 +955,7 @@ form div label{
     font-size: 0.6875em;
     color: #9C9C9C;
 }
-.sum > div:last-child{
+.sum > div:nth-child(2){
     font-family: 'Gilroy_Bold';
     font-size: 1.0625em;
     color: #9C9C9C;
@@ -1165,7 +1165,129 @@ form div label{
     font-weight: bold;
 }
 
-
+/* for customers.html */
+.customers{
+    padding: 1vw;
+    border-radius: 4px;
+    border: 0.5px solid rgba(160, 149, 171, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0877491);
+    background: #ffffff;
+}
+.customers .quantity > div:nth-child(3) {
+    font-family: 'OpenSans-Regular';
+    font-size: 0.6875em;
+    color: rgba(112, 118, 131, 0.7);
+}
+.customers:first-child .quantity{
+    margin-right: 2vw;
+}
+.customers .quantity{
+    margin-right: 0;
+}
+.custNum{
+    font-size: 1.5em;
+   color: #7D8997; 
+}
+.numPercentage{
+    margin-right: 1vw;
+}
+.customersTable{
+    margin-top: 2vw;
+    padding: 0.75vw 0 0 0;
+}
+.customersTable tr th{
+    border: 1px solid #000;
+}
+.customersTable tr td{
+    border: 1px solid #000;
+/*     padding: 0;
+    margin: 0; */
+}
+.customersTable tr th:first-child{
+    width: 5%;
+}
+/*
+.customersTable tr td:first-child{
+    width: 5%;
+}
+.customersTable tr th:nth-child(2){
+    width: 7.14%;
+}
+.customersTable tr td:nth-child(2){
+    width: 7.14%;
+}
+.customersTable tr th:nth-child(3){
+    width: 7%;
+}
+.customersTable tr td:nth-child(3){
+    width: 7%;
+}
+.customersTable tr th:nth-child(4){
+    width:  8.14%;
+}
+.customersTable tr td:nth-child(4){
+    width:  8.14%;
+}
+.customersTable tr th:nth-child(5){
+    width: 9.14%;
+}
+.customersTable tr td:nth-child(5){
+    width: 9.14%;
+}
+.customersTable tr th:nth-child(6){
+    width: 7.14%;
+}
+.customersTable tr td:nth-child(6){
+    width: 7.14%;
+}
+.customersTable tr th:nth-child(7){
+    width: 7.14%;
+}
+.customersTable tr td:nth-child(7){
+    width: 7.14%;
+}
+.customersTable tr th:nth-child(8){
+    width: 6.14%;
+}
+.customersTable tr td:nth-child(8){
+    width: 6.14%;
+}
+.customersTable tr th:nth-child(9){
+    width: 7.14%;
+}
+.customersTable tr td:nth-child(9){
+    width: 7.14%;
+}
+.customersTable tr th:nth-child(10){
+    width: 7.14%;
+}
+.customersTable tr td:nth-child(10){
+    width: 7.14%;
+}
+.customersTable tr th:nth-child(11){
+    width: 7.14%;
+}
+.customersTable tr td:nth-child(11){
+    width: 7.14%;
+}
+.customersTable tr th:nth-child(12){
+    width: 7.14%;
+}
+.customersTable tr td:nth-child(12){
+    width: 7.14%;
+}
+.customersTable tr th:nth-child(13){
+    width: 7.14%;
+}
+.customersTable tr td:nth-child(13){
+    width: 7.14%;
+}
+.customersTable tr th:last-child{
+    width: 7%;
+}
+.customersTable tr td:last-child{
+    width: 7.14%;
+} */
 /***************************************************************************************************************************************/
 /* media queries */
 @media(max-width: 1572px) {
@@ -1260,7 +1382,7 @@ form div label{
     .quantity{
         height: 3.5vw;
     }
-    .quantity > div:last-child{
+    .quantity > div:nth-child(2){
         font-size: 1.9174em;
         line-height: 1em;
         letter-spacing: 1.37px;
@@ -1627,7 +1749,7 @@ form div label{
     .quantity{
         height: 4.5vw;
     }
-    .quantity > div:last-child{
+    .quantity > div:nth-child(2){
         font-size: 1.9174em;
         line-height: 1em;
         letter-spacing: 1.37px;
