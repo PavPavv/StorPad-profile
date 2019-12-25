@@ -1148,6 +1148,7 @@ form div label{
 }
 .row3 tr td:nth-child(5){
     width: 13vw;
+    text-align: center;
     padding-right: 0;
 }
 .row3 tr td:nth-child(6){
@@ -1325,6 +1326,10 @@ form div label{
 }
 .customersTable tbody tr:hover{
     background: rgba(128, 94, 174, 0.07);
+}
+/* display */
+.map img{
+    max-width: 100%;
 }
 /***************************************************************************************************************************************/
 /* media queries */
@@ -1897,6 +1902,20 @@ form div label{
         overflow: hidden;
         overflow-x: auto;
     }
+    .table1::-webkit-scrollbar{
+        width: 10px;
+        border-radius: 20px;
+    }
+    .table1::-webkit-scrollbar-track{
+        width: 10px;
+        background: #EBECF9;
+    }
+    .table1::-webkit-scrollbar-thumb{
+        width: 10px;
+        background: #C3BDC8;
+        border: 7px solid #EBECF9;
+        border-radius: 16px;
+    }
     .table1 thead,
     .table1 tbody{
         width: 688px!important;
@@ -1931,7 +1950,7 @@ form div label{
     }
     .table1 tr th:nth-child(6),
     .row3 tr td:nth-child(6){
-        width: 42px!important;
+        width: 52px!important;
         padding: 0;  
     }
     .table1 tr th:nth-child(7),
