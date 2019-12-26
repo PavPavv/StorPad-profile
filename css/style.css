@@ -1517,6 +1517,9 @@ form div label{
 .fullPage{
     height: 44.05vw!important;
 }
+.halfPage{
+    height: 31vw!important;
+}
 
 /* display.html */
 .displayTable tr th:first-child,
@@ -1580,8 +1583,22 @@ form div label{
 .indicator > * {
     margin-right: 7px;
 }
-
-
+.analytics{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+.info{
+    font-family: 'OpenSans-Regular';
+    font-size: 0.6875em;
+    line-height: 2.25em;
+    font-weight: bold;
+    color: #707683;
+}
+.info span {
+    font-weight: normal;
+}
 
 
 
