@@ -420,6 +420,7 @@ header{
 }
 .lessLeftSpace{
     padding: 0 2vw 2.5vw 2vw!important;
+    overflow-x: hidden;
 }
 .dataTop{
     display: flex;
@@ -428,7 +429,20 @@ header{
     padding: 1vw 0;
 }
 .noSpaceBetween{
+    position: relative;
     justify-content: flex-start!important;
+    margin-bottom: 1vw;
+}
+.noSpaceBetween:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0.2vw;
+    left: -10%;
+    width: 200%;
+    height: 1px;
+    background: #DFE0EB;
+
 }
 .noSpaceBetween > .options{
     margin-left: 10px;
@@ -916,9 +930,6 @@ form div label{
     display: flex;
     flex-wrap: wrap;
 }
-/* .numbers > * {
-    margin-right: 1.5vw;
-} */
 .numbersWrap{
     display: flex;
     margin-right: 1.5vw;
@@ -989,6 +1000,14 @@ form div label{
 }
 .totalColor{
     color:#8C7F98!important;
+}
+
+.doneBlock{
+    border-color: #9C9C9C;
+    color: #9C9C9C;
+}
+.doneBlockColor{
+    color:#9C9C9C!important;
 }
 
 .wait{
@@ -1333,6 +1352,9 @@ form div label{
 .customersTable tr td:last-child{
     width: 7.3437vw;
 }
+.customersTable tbody tr td:last-child{
+    padding-left: 18px!important;
+}
 .table1 tbody tr:hover,
 .customersTable tbody tr:hover,
 .displaysTable tbody tr:hover{
@@ -1599,11 +1621,59 @@ form div label{
 .info span {
     font-weight: normal;
 }
-
-
-
-
-
+.analytic{
+    display: flex;
+    flex-direction: column;
+}
+.analytic > div {
+    display: flex;
+    justify-content: space-between;
+}
+.analytic > div:first-child{
+    margin-bottom: 0.8vw;
+}
+.analytic .number {
+    margin-right: 0.8vw;
+}
+.analytic .total:first-child{
+    width: 13.6vw;
+}
+.analytic .total:last-child{
+    flex: 2;
+}
+.analytic div .number:last-child{
+    margin-right: 0;
+}
+.analytic .number .numHeader{
+    margin-bottom: 0.4vw;
+}
+.analytic .number .numBody .quantity{
+    flex: 1;
+}
+.analytic .number .numBody .sum{
+    flex: 1;
+}
+.analytic .quantity {
+    margin-right: 0;
+}
+.analytic .sum {
+    width: 9vw;
+}
+.visual{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4vw;
+    margin-left: 20px;
+}
+.visual img{
+    max-width: 100%;
+}
+.visual .info{
+    display: none;
+}
+.noSpaceBetween h1{
+    white-space: nowrap;
+}
 
 
 
@@ -1708,7 +1778,9 @@ form div label{
         border-radius: 50%;
         background:#707683;
     }
-    /**/
+    .analyticsWrap{
+        display: flex;
+    }
     .modalWrap{
         top: 2vw;
         right: 4vw;
@@ -1726,6 +1798,13 @@ form div label{
     }
     .displayTable tr th:first-child:after{
         left: 5px!important;
+    }
+    .analytics .info{
+        order: 2;
+        margin-left: 20px;
+    }
+    .visual{
+        order: 3;
     }
 }
 @media(max-width: 1410px) {
@@ -2111,6 +2190,36 @@ form div label{
     .displayTable .row3 tr td:last-child{
         width: 190px!important;
     }
+    .analytic{
+        flex: 1;
+    }
+    .visual{
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 0;
+    }
+    .visual > .info{
+        display: block!important;
+        margin-top: 2vw;
+        margin-right: 10vw;
+    }
+    .analytic > div:last-child {
+        flex-direction: column;
+    }
+    .analytics .info{
+        display: none;
+    }
+    .analytic .number {
+        width: 100%;
+        margin-right: 0.7vw;
+        margin-bottom: 1.5vw;
+        padding: 15px 10px;
+    }
+    .sum > div:last-child{
+        white-space: nowrap;
+    }
 }
 @media(max-width: 1244px) {
     .numbersWrap{
@@ -2191,6 +2300,7 @@ form div label{
         top: 47%;
         left: 80px;
     }
+
 }
 /* @media(max-width: 1144px) {
     .quantity > div:last-child{
@@ -2315,6 +2425,9 @@ form div label{
         padding-left: 0;
         padding-right: 0;
     }
+    .analytic > div:first-child {
+        flex-direction: column;
+    }
 }
 @media(max-width: 906px) {
     .table1{
@@ -2392,7 +2505,32 @@ form div label{
         padding-right: 1vw;
         font-weight: bold;
     }
-} 
+    .displayTable tr th:first-child, .displayTable .row3 tr td:first-child {
+        width: 67px!important;
+    }
+    .displayTable tr th:nth-child(2), .displayTable .row3 tr td:nth-child(2) {
+        width: 86px!important;
+    }
+    .displayTable tr th:nth-child(3), .displayTable .row3 tr td:nth-child(3) {
+        width: 89px!important;
+    }
+    .displayTable tr th:nth-child(4), .displayTable .row3 tr td:nth-child(4) {
+        width: 60px!important;
+    }
+    .displayTable tr th:nth-child(5), .displayTable .row3 tr td:nth-child(5) {
+        width: 84px!important;
+    }
+    .displayTable .row3 tr td:nth-child(6) {
+        width: 110px!important;
+        /* text-align: center; */
+    }
+    .displayTable .row3 tr td:nth-child(7) {
+        width: 62px!important;
+    }
+    .displayTable .row3 tr td:last-child {
+        width: 106px!important;
+    }
+    } 
 @media(max-width: 800px){
     .col{
         flex-direction: column;
@@ -2522,6 +2660,25 @@ form div label{
         flex-direction: column;
         width: 100%;
         margin-right: 0;
+    }
+}
+@media(max-width: 450px) {
+    .analytics{
+        flex-direction: column;
+    }
+    .analytic{
+        width: 100%;
+    }
+    .visual{
+        margin-top: 7vw;
+        align-items: center;
+    }
+    .visual img{
+        max-width: 80%;
+    }
+    .visual .info{
+        margin-top: 7vw;
+        margin-bottom: 7vw;
     }
 }
 @media(max-width: 430px) {
