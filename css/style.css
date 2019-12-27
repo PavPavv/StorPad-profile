@@ -1544,6 +1544,9 @@ form div label{
 }
 
 /* display.html */
+.displayTable{
+    margin-top: 2vw;
+}
 .displayTable tr th:first-child,
 .displayTable tr td:first-child{
     width: 5vw!important;
