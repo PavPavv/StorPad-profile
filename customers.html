@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StorPad</title>
+    <link rel="shortcut icon" href="i/icon/page-ic.png" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!--ASIDE MENU-PANEL-->
+    <aside class="aside1">
+        <div class="closeMenu"></div>
+        <div class="logo">
+            <a href="#">
+                <img src="i/general/logo-account.png" alt="logo" class="logo-img">
+            </a>
+        </div>
+        <ul id="menu">
+            <li>Dashboard</li>
+            <li>Orders</li>
+            <li class="item-active">Customers</li>
+            <li>Products</li>
+            <li>Display</li>
+            <li>Marketing</li>
+        </ul>
+        <div class="options">
+            <div class="options-ic">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="options-descr">Settings</div>
+        </div>
+    </aside>
+    
+    <!--ASIDE MOBILE -->
+    <aside class="aside2">
+        <div class="logo">
+            <a href="#">
+                <img src="i/icon/page-ic.png" alt="logo" class="logo-img">
+            </a>
+        </div>
+        <ul class="menu">
+            <li class="item-active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="options">
+            <div class="options-ic">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="options-descr"></div>
+        </div>
+    </aside>
+    
+    <!--DATA SPACE-->
+    <div class="wrapper">
+        <!--HEADER-->
+        <header>
+            <div class="user-icon"></div>
+            <div class="user-name">Ольга Кунст</div>
+            <div class="notification"></div>
+        </header>
+        <!--DATA PANEL-->
+        <!--data header-->
+        <section class="data lessLeftSpace">
+            <!--MODAL WINDOW-->
+            <div id="modal" class="modal">
+                <div class="modalWrap">
+                    <h3>Чтобы продолжить, пожалуйста, заполните ваш профиль</h3>
+                    <form>
+                        <div>
+                            <input type="text">
+                            <label>Имя*</label>
+                        </div>
+                        <div>
+                            <input type="text">
+                            <label>Фамилия*</label>
+                        </div>
+                        <div>
+                            <input type="text">
+                            <label>Телефон*</label>
+                        </div>
+                        <div>
+                            <input type="email">
+                            <label>Email*</label>
+                        </div>
+                        <button id="btn">Заполнить</button>
+                    </form>
+                </div>
+            </div>
+            <!--NOTIFICATION WINDOW-->
+            <div id="modal1" class="modal1">
+                <div class="modalWrap1 notifyWrap">
+                    <div class="header headerNotify">
+                        <div class="notifyInner">
+                            <div class="notify-ic">
+                                <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.875 11.0769V11.2826L11.0197 11.4287L12.5 12.9236V13.0385H0.5V12.9236L1.98028 11.4287L2.125 11.2826V11.0769V6.97436C2.125 4.61799 3.34466 2.7662 5.3976 2.27499L5.78125 2.1832V1.78872V1.23077C5.78125 0.821248 6.10638 0.5 6.5 0.5C6.89362 0.5 7.21875 0.821248 7.21875 1.23077V1.78872V2.18288L7.60201 2.2749C9.64752 2.76604 10.875 4.62664 10.875 6.97436V11.0769ZM7.51026 14.859C7.32566 15.2388 6.93869 15.5 6.5 15.5C6.05637 15.5 5.6712 15.2393 5.48827 14.859H7.51026Z"
+                                        stroke="white" />
+                                </svg>
+                            </div>
+                            <div>Уведомления</div>
+                        </div>
+                        <div class="closeNotify"></div>
+                    </div>
+                    <div class="bodyNotify">
+                        <div class="notify">
+                            <div class="time"><span>2 часа</span> назад</div>
+                            <div class="message">Изменено время проведения встречи "Обсуждение вопросов по сайту StorPad.com с вашим
+                                участием
+                                17.10.2019 11:00, на 19.10.2019 11:00</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                        <div class="notify">
+                            <div class="time"><span>05.10.19.</span></div>
+                            <div class="message">В задачах есть целый ряд классных инструментов, которые могут сделать работу с ними
+                                куда быстрее
+                                и удобнее. Я расскажу, как ими пользоваться и как они могут быть полезны вашей компании</div>
+                            <div class="more">Посмотреть подробности</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dataTop">
+                <h1>Customers</h1>
+                <div>
+                    <div class="topPanel">Показать: <span>еденицы</span></div>
+                    <div class="set-ic"></div>
+                </div>
+            </div>
+            <!--data numbers-->
+            <div class="numbers">
+                   <div class="numbersWrap">
+                        <div class="number customers">
+                            <div class="numBody">
+                                <div class="quantity">
+                                    <div></div>
+                                    <div class="custNum">100 589</div>
+                                    <div>всего клиентов</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="number customers">
+                            <div class="numBody">
+                                <div class="numPercentage">
+                                    <img src="i/icon/customers_percentages.svg" alt="">
+                                </div>
+                                <div class="quantity">
+                                    <div></div>
+                                    <div class="custNum">87 048</div>
+                                    <div>заказали повторно</div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+            </div>
+            <!--NUMBERS TABLE-->
+            <div class="customersTable">
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Клиент</th>
+                            <th>Имя</th>
+                            <th>Email</th>
+                            <th>Телефон</th>
+                            <th>Город</th>
+                            <th>День рождения</th>
+                            <th>Заказы</th>
+                            <th>Статус</th>
+                            <th>Возврат</th>
+                            <th>Отмена</th>
+                            <th>Завершено</th>
+                            <th>Ожидает подтверждения</th>
+                            <th>В пути к клиенту</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1125</td>
+                            <td>Сидоренко</td>
+                            <td>Виктор</td>
+                            <td>victor_akulshin@gmail.com</td>
+                            <td>+7 (927) 007-21-87</td>
+                            <td>Самара</td>
+                            <td>25.10.1985</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td></td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1126</td>
+                            <td>Петров</td>
+                            <td>Дмитрий</td>
+                            <td>victor_akulshin@gmail.com</td>
+                            <td>+7 (927) 007-21-87</td>
+                            <td>Уфа</td>
+                            <td>27.11.1995</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1127</td>
+                            <td>Петров</td>
+                            <td>Павел</td>
+                            <td>victor_akulshin@gmail.com</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Саратов</td>
+                            <td>27.11.1995</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1128</td>
+                            <td>Петров</td>
+                            <td>Павел</td>
+                            <td>victor_akulshin@gmail.com</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Казань</td>
+                            <td>27.11.1995</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1129</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1995</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1130</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1995</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1131</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1995</td>
+                            <td>9</td>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1132</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Самара</td>
+                            <td>27.11.1985</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1133</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Самара</td>
+                            <td>27.11.1985</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1134</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1985</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1135</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1985</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1136</td>
+                            <td>Сидоренко</td>
+                            <td>Олег</td>
+                            <td>oleg174@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Челябинск</td>
+                            <td>27.11.1985</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1137</td>
+                            <td>Сидоренко</td>
+                            <td>Олег</td>
+                            <td>oleg174@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Челябинск</td>
+                            <td>27.11.1985</td>
+                            <td>14</td>
+                            <td>14</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1138</td>
+                            <td>Сидоренко</td>
+                            <td>Виктор</td>
+                            <td>victor_akulshin@gmail.com</td>
+                            <td>+7 (927) 007-21-87</td>
+                            <td>Самара</td>
+                            <td>25.10.1985</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td></td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1139</td>
+                            <td>Петров</td>
+                            <td>Дмитрий</td>
+                            <td>victor_akulshin@gmail.com</td>
+                            <td>+7 (927) 007-21-87</td>
+                            <td>Уфа</td>
+                            <td>27.11.1995</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1140</td>
+                            <td>Петров</td>
+                            <td>Павел</td>
+                            <td>victor_akulshin@gmail.com</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Саратов</td>
+                            <td>27.11.1995</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1141</td>
+                            <td>Петров</td>
+                            <td>Павел</td>
+                            <td>victor_akulshin@gmail.com</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Казань</td>
+                            <td>27.11.1995</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1142</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1995</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1143</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1995</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1144</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1995</td>
+                            <td>9</td>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1145</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Самара</td>
+                            <td>27.11.1985</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1146</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Самара</td>
+                            <td>27.11.1985</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1147</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1985</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1148</td>
+                            <td>Сидоренко</td>
+                            <td>Павел</td>
+                            <td>pavel_sidorenko@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Москва</td>
+                            <td>27.11.1985</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1149</td>
+                            <td>Сидоренко</td>
+                            <td>Олег</td>
+                            <td>oleg174@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Челябинск</td>
+                            <td>27.11.1985</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1150</td>
+                            <td>Сидоренко</td>
+                            <td>Олег</td>
+                            <td>oleg174@mail.ru</td>
+                            <td>+7 (927) 007-21-88</td>
+                            <td>Челябинск</td>
+                            <td>27.11.1985</td>
+                            <td>14</td>
+                            <td>14</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    <script src="js/main.js"></script>    
+</body>
+</html>
