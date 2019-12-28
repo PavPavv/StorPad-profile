@@ -434,6 +434,9 @@ header{
 .leftAlign{
     justify-content: flex-start!important;
 }
+.leftAlign h1 {
+    white-space: nowrap;
+}
 .topWrapper h1{
     margin-right: 1vw;
 }
@@ -1609,6 +1612,7 @@ form div label{
     font-family: 'OpenSans-Regular';
     letter-spacing: 0.01em;
     color: #48D2A0;
+    white-space: nowrap;
 }
 .indicator{
     display: flex;
@@ -1693,43 +1697,43 @@ form div label{
 }
 .order tr th:first-child,
 .order tr td:first-child{
-    width: 5vw;
+    width: 5vw!important;
 }
 .order tr th:nth-child(2),
 .order tr td:nth-child(2){
-    width: 30vw;
+    width: 30vw!important;
 }
 .order tr th:nth-child(3),
 .order tr td:nth-child(3){
-    width: 7vw;
+    width: 7vw!important;
 }
 .order tr th:nth-child(4),
 .order tr td:nth-child(4){
-    width: 7vw;
+    width: 7vw!important;
 }
 .order tr th:nth-child(5),
 .order tr td:nth-child(5){
-    width: 12vw;
+    width: 12vw!important;
 }
 .order tr th:nth-child(6),
 .order tr td:nth-child(6){
-    width: 12vw;
+    width: 12vw!important;
 }
 .order tr th:last-child,
 .order tr td:last-child{
-    width: 12vw;
+    width: 12vw!important;
 }
 .order tr th:after {
-    content: '';
-    display: inline-block;
-    position: relative;
-    top: 47%;
-    left: 10px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 5px 3.5px 0 3.5px;
-    border-color: #ffffff transparent transparent transparent;
+    content: ''!important;
+    display: inline-block!important;
+    position: relative!important;
+    top: 47%!important;
+    left: 10px!important;
+    width: 0!important;
+    height: 0!important;
+    border-style: solid!important;
+    border-width: 5px 3.5px 0 3.5px!important;
+    border-color: #ffffff transparent transparent transparent!important;
 }
 .text div{
     font-size: 0.6875em;
@@ -1741,6 +1745,9 @@ form div label{
 .text div span{
     font-weight: normal;
 }
+.text div:first-child{
+    margin-bottom: 5px;
+}
 .blocks{
     display: flex;
     align-items: center;
@@ -1750,29 +1757,34 @@ form div label{
     margin-right: 0.7vw;
 }
 .blockInfo{
+    /* height: 4.8vw; */
     border: 1px solid #A095AB;
     border-radius: 4px;
-    padding: 0.5vw;
+    padding: 0.5vw 0.5vw 0.8vw 0.5vw;
     color: #A095AB;
 }
 .blockInfo div:first-child{
     font-family: 'OpenSans-Regular';
-    font-size: 0.8125em;
+    font-size: 0.9125em;
     line-height: 1.4em;
     padding-bottom: 0.8vw;
+    letter-spacing: 0.81px;
 }
-.blockInfo div:nth-child(2){
+.blockSum{
     font-family: 'Gilroy_Regular';
     font-size: 0.6875em;
     line-height: 0.8em;
     color: #9C9C9C;
+    letter-spacing: 0.7px;
+    margin-bottom: 0.4vw;
 }
-.blockInfo div:nth-child(3){
+.blockNum{
     font-family: 'Gilroy_Regular';
     font-weight: bold;
     font-size: 1.0625em;
     line-height: 0.8em;
-    padding-top: 0.7vw;
+    padding-top: 0.6vw;
+    letter-spacing: 1.37px;
 }
 .blockInfo:first-child{
     padding-right: 1vw;
@@ -1786,11 +1798,128 @@ form div label{
     background: url('../i/icon/ico_order_info_block.svg') center center  no-repeat;
 }
 .address{
-    font-family: 'Gilroy_Thin'!important;
-    font-size: 0.8461em!important;
-    line-height: 0.8125em!important;
-    color: #9C9C9C!important;
+    font-family: 'Gilroy_Regular';
+    font-size: 0.7875em;
+    line-height: 0.8125em;
+    color: #9C9C9C;
 }
+.address:nth-child(2){
+    margin-bottom: 0.7390625vw;
+}
+.address span{
+    font-family: 'OpenSans-Regular';
+    color: #707683;
+    font-size: 0.9875em;
+    line-height: 1.0875em;
+}
+.checkpoints{
+    margin: 2vw 0 2vw 0;
+}
+.checkpoints > div:first-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5vw;
+}
+.checkpoints div .info{
+    margin-right: calc(8.6vw - 20px);
+}
+.checkpoints > div:nth-child(2) {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.checkpoints > div:last-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 0.7vw;
+}
+.checkpoints > div:last-child .info:first-child{
+    margin-right: calc(7.6vw - 20px)!important;
+}
+.checkpoints > div:last-child .info:nth-child(2){
+    margin-right: calc(9vw - 20px)!important;
+}
+.checkpoints > div:last-child .info:nth-child(3){
+    margin-right: calc(9.8vw - 20px)!important;
+}
+.check{
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #8C7F98;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+    background: #ffffff;
+}
+.check:first-child{
+    margin-left: 0;
+}
+.check:last-child{
+    margin-right: 0;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #8C7F98;
+    transform: translate(-50%, -50%);
+}
+.filled{
+    position: relative;
+    background: #8C7F98;
+}
+.filled:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+.line{
+    width: 8.6vw;
+    height: 2px;
+    background: #8C7F98;
+}
+.undone{
+    background: #C6BDCE;
+}
+.textPoints{
+    font-family: 'OpenSans_Light'!important;
+    letter-spacing: 0.01em!important;
+    line-height: 1vw!important;
+    color: #979797!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***************************************************************************************************************************************/
 /* media queries */
@@ -2330,6 +2459,14 @@ form div label{
     .sum > div:last-child{
         white-space: nowrap;
     }
+    .order tr th:first-child,
+    .order tr td:first-child{
+        width: 10vw!important;
+    }
+    .order tr th:nth-child(2),
+    .order tr td:nth-child(2){
+        width: 25vw!important;
+    }
 }
 @media(max-width: 1244px) {
     .numbersWrap{
@@ -2410,19 +2547,75 @@ form div label{
         top: 47%;
         left: 80px;
     }
-
+    .order tr th:first-child,
+    .order tr td:first-child{
+        width: 7vw!important;
+    }
+    .order tr th:nth-child(2),
+    .order tr td:nth-child(2){
+        width: 20vw!important;
+    }
+    .order tr th:nth-child(5),
+    .order tr td:nth-child(5){
+        width: 18vw!important;
+        text-align: left;
+    }
 }
-/* @media(max-width: 1144px) {
-    .quantity > div:last-child{
-        font-size: 1.1174em;
-        line-height: 1em;
-        letter-spacing: 1.37px;
+@media(max-width: 1160px) {
+    .order{
+        overflow: hidden;
+        overflow-x: auto;
     }
-    .sum > div:last-child{
-        font-size: 0.6125em;
-        letter-spacing: 1.7px;
+    .order thead,
+    .order tbody{
+        width: 940px;
     }
-} */
+    .order tbody{
+        height: auto;
+    }
+    .order tr th:first-child,
+    .order tr td:first-child{
+        width: 79px!important;
+    }
+    .order tr th:nth-child(2),
+    .order tr td:nth-child(2){
+        width: 260px!important;
+    }
+    .order tr th:nth-child(3),
+    .order tr td:nth-child(3){
+        width: 83px!important;
+    }
+    .order tr th:nth-child(4),
+    .order tr td:nth-child(4){
+        width: 83px!important;
+    }
+    .order tr th:nth-child(5),
+    .order tr td:nth-child(5){
+        width: 142px!important;
+    }
+    .order tr th:nth-child(6),
+    .order tr td:nth-child(6){
+        width: 143px!important;
+    }
+    .order tr th:last-child,
+    .order tr td:last-child{
+        width: 143px!important;
+    }
+    .order::-webkit-scrollbar{
+        width: 10px;
+        border-radius: 20px;
+    }
+    .order::-webkit-scrollbar-track{
+        width: 10px;
+        background: #EBECF9;
+    }
+    .order::-webkit-scrollbar-thumb{
+        width: 10px;
+        background: #C3BDC8;
+        border: 7px solid #EBECF9;
+        border-radius: 16px;
+    }
+}
 @media(max-width: 1010px) {
      body{
         font-size: 13px;
@@ -2640,7 +2833,10 @@ form div label{
     .displayTable .row3 tr td:last-child {
         width: 106px!important;
     }
-    } 
+    .checkpoints{
+        margin: 9vw 0 7vw 0;
+    }
+} 
 @media(max-width: 800px){
     .col{
         flex-direction: column;
