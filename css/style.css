@@ -65,6 +65,9 @@ button{
     position: relative;
     width: 100%;
 }
+.fullHeight{
+    height: 100vh;
+}
 /* grid */
 .col{
     display: flex;
@@ -553,7 +556,9 @@ thead {
     display: table;
     width: 100%;
 }
-tbody {
+.table tbody,
+.table1 tbody,
+.customersTable tbody {
     height: 41.2vw;
     overflow: hidden;
     display: block;
@@ -1694,6 +1699,9 @@ form div label{
 /* order.html */
 .order tr th:after{
     display: none;
+}
+.order tbody{
+    /* height: 100%; */
 }
 .order tr th:first-child,
 .order tr td:first-child{
@@ -2922,6 +2930,36 @@ form div label{
         border: 7px solid #EBECF9;
         border-radius: 16px;
     }
+    .line{
+        width: 15.6vw;
+    }
+    .checkpoints > div:last-child .info:first-child{
+        margin-right: calc(13.6vw - 20px)!important;
+    }
+    .checkpoints > div:last-child .info:nth-child(2){
+        margin-right: calc(16vw - 20px)!important;
+    }
+    .checkpoints > div:last-child .info:nth-child(3){
+        margin-right: calc(17.8vw - 20px)!important;
+    }
+    .checkpoints > div:first-child .info:first-child{
+        margin-right: calc(15.6vw - 20px)!important;
+    }
+    .checkpoints > div:first-child .info:nth-child(2){
+        margin-right: calc(15vw - 20px)!important;
+    }
+    .checkpoints > div:first-child .info:nth-child(3){
+        margin-right: calc(15.4vw - 20px)!important;
+    }
+    .checkpoints > div:first-child{
+        margin-bottom: 1.5vw;
+    }
+    .checkpoints > div:last-child{
+        margin-top: 1.5vw;
+    }
+    .textPoints{
+        line-height: 1.5!important;
+    }
 }
 @media (max-width: 700px) {
     body{
@@ -2930,6 +2968,13 @@ form div label{
     h2{
         font-size: 0.7em;
     }  
+}
+@media(max-width: 667px) {
+    .numbersWrap{
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+    }
 }
 @media(max-width: 544px){
     tr th{
@@ -2960,12 +3005,12 @@ form div label{
     .bodyNotify::-webkit-scrollbar-thumb{
         border: 4px solid #EBECF9;
     }
-}
-@media(max-width: 667px) {
-    .numbersWrap{
+    .blocks{
+        margin: 5vw 0;
         flex-direction: column;
-        width: 100%;
-        margin-right: 0;
+    }
+    .arrowInfo{
+        transform: rotate(90deg);
     }
 }
 @media(max-width: 450px) {

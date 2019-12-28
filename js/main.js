@@ -51,19 +51,26 @@ const showMenu = () => {
 const modalWindow = () =>{
 	const modal = document.getElementById('modal');
 	const btn = document.getElementById('btn');
+	const data = document.querySelector('.data');
+	const dataHeight = data.clientHeight;
+	const windowHeight = document.documentElement.clientHeight;
 	//const modalWrap = document.querySelector('.modalWrap');
 	//console.log(btn);
 	function showModal() {
-		//modal.style.opacity = '1';
-		modal.classList.add('active');
+		if (windowHeight > dataHeight) {
+			data.classList.add('fullHeight');
+			modal.classList.add('active');
+		} else{
+			modal.classList.add('active');
+		}
+		
 	};
 
 	const interval = setInterval(showModal, 3000);
 
 	modal.addEventListener('click', function() {
 		if (event.target === modal || event.target === btn) {
-			    //modal.style.visibility = 'visible';
-				//modal.style.opacity = '0';
+				data.classList.remove('fullHeight');
 				modal.classList.remove('active');
 				clearInterval(interval);
 		} else {
