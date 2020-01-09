@@ -1910,7 +1910,13 @@ form div label{
     line-height: 1vw!important;
     color: #979797!important;
 }
+/* DISPLAY SETTINGS */
+.display{
 
+}
+.display img{
+    max-width: 30%;
+}
 
 
 
