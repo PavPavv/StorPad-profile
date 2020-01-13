@@ -1902,7 +1902,7 @@ form div label{
     background: #8C7F98;
 }
 .undone{
-    background: #C6BDCE;
+    background: #C6BDCE!important;
 }
 .textPoints{
     font-family: 'OpenSans_Light'!important;
@@ -1911,19 +1911,87 @@ form div label{
     color: #979797!important;
 }
 /* DISPLAY SETTINGS */
+.wrapperSet{
+    display: flex;
+}
 .display{
-
+    width: 26.71875vw;
+    height: 44.27vw;
 }
 .display img{
-    max-width: 30%;
+    max-width: 100%;
 }
-
-
-
-
-
-
-
+.settings{
+    margin-left: 4vw;
+}
+.settings h2{
+    font-family: 'Gilroy_SemiBold';
+    font-size: 1.375em;
+    color: #000;
+    letter-spacing: 0.01em;
+    padding-bottom: 3vw;
+}
+.settings div{
+    display: flex;
+}
+.legs{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+    text-align: center;
+}
+.legs div{
+    font-family: 'Gilroy_SemiBold';
+    font-size: 1.9375em;
+    line-height: 0.7475em;
+    flex-direction: column;
+    color: #442B69;
+}
+.legs div:first-child{
+    margin-bottom: 8.6vw;;
+}
+.legs div:nth-child(2){
+    margin-bottom: 11.4vw;
+}
+.legs div:nth-child(3){
+    margin-bottom: 6vw;
+}
+.legs span{
+    font-size: 0.4375em;
+    letter-spacing: 0.7px;
+    font-family: 'Gilroy_Medium';
+}
+.checkpointsSet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.checkpointsSet .check{
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+.checkpointsSet .check:first-child{
+    margin-left: 0.5vw;
+}
+.checkpointsSet .check:nth-child(2),
+.checkpointsSet .check:nth-child(3){
+    margin-top: 0.5vw;
+}
+.checkpointsSet .check:last-child{
+    margin-right: 0.5vw;
+}
+.lineSet{
+    width: 2px;
+    background: #8C7F98;
+}
+.tools{
+    display: flex;
+    flex-direction: column;
+}
+.toolsHeader{
+    font-size: 1.375em;
+    color: #442B69;
+}
 
 
 
