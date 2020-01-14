@@ -1967,15 +1967,15 @@ form div label{
     align-items: center;
 }
 .checkpointsSet .check{
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
+    margin-top: 0.2vw;
+    margin-bottom: 0.2vw;
 }
 .checkpointsSet .check:first-child{
     margin-left: 0.5vw;
 }
 .checkpointsSet .check:nth-child(2),
 .checkpointsSet .check:nth-child(3){
-    margin-top: 0.5vw;
+    margin-top: 0.2vw;
 }
 .checkpointsSet .check:last-child{
     margin-right: 0.5vw;
@@ -1987,13 +1987,194 @@ form div label{
 .tools{
     display: flex;
     flex-direction: column;
+    margin-left: 1vw;
+}
+.tool{
+    display: flex;
+    flex-direction: column;
+}
+.tool:first-child{
+    height: 9.8vw;
 }
 .toolsHeader{
+    position: relative;
+    padding-left: 10px;
     font-size: 1.375em;
+    font-family: 'Gilroy_Medium';
     color: #442B69;
+    cursor: pointer;
 }
-
-
+.tool:first-child .toolsHeader:before{
+    content: '';
+    position: relative;
+    top: 10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #442B69 transparent transparent transparent;
+}
+.tool:nth-child(2) .toolsHeader:before{
+    content: '';
+    position: relative;
+    top: 8px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent #442B69;
+}
+.toolsBody{
+    margin: 0.7vw 0;
+    width: 17vw;
+    font-family: 'Gilroy_Regular';
+    font-size: 0.875em;
+    line-height: 1.425em;
+    color: #7D7D7D;
+}
+#input{
+    margin-top: 0.5vw;
+}
+.tool input[type="text"]{
+    width: 17vw;
+    padding: 0 15px;
+    border: 0;
+    box-shadow: 0 2px 4px -2px rgba(112,118,131,.4);
+}
+.tool input[type="text"]::placeholder{
+    color: #707683;
+}
+.tool input[type="submit"] {
+    padding: 0.4vw 1.5vw;
+    font-size: 0.875em;
+    font-family: 'Gilroy_Medium';
+    border: 0;
+    color: #ffffff;
+    background: #49326C;    
+}
+.pallete{
+    margin-top: 1.5vw;;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+    width: 12.0625vw;
+    height: 9.0625vw;
+}
+.pallete > * {
+    margin-right: 7px;
+}
+.color{
+    position: relative;
+    border: 0;
+    border-radius: 4px;
+    width: 1.7187vw;
+    height: 1.45vw;
+    background: red;
+}
+.pickColor{
+    border: 1px solid blue;
+}
+.color:first-child:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: -20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #8C7F98;
+    background: #fff;
+}
+.color:nth-child(5n+6):before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: -20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #8C7F98;
+    background: #fff;
+}
+.color:first-child{
+    background: #000;
+}
+.color:nth-child(2){
+    background: #757575;
+}
+.color:nth-child(3){
+    background: #FE133C;
+}
+.color:nth-child(4){
+    background: #FF74A1;
+}
+.color:nth-child(5){
+    background: #02525F;
+}
+.color:nth-child(6){
+    background: #262626;
+}
+.color:nth-child(7){
+    background: #686B6D;
+}
+.color:nth-child(8){
+    background: #BBBCBE;
+}
+.color:nth-child(9){
+    background: #D01D28;
+}
+.color:nth-child(10){
+    background: #D1606D;
+}
+.color:nth-child(11){
+    background: #25120D;
+}
+.color:nth-child(12){
+    background: #716960;
+}
+.color:nth-child(13){
+    background: #C5C5C5;
+}
+.color:nth-child(14){
+    background: #9E8265;
+}
+.color:nth-child(15){
+    background: #D1BBAA;
+}
+.color:nth-child(16){
+    background: #010001;
+}
+.color:nth-child(17){
+    background: #312138;
+}
+.color:nth-child(18){
+    background: #645565;
+}
+.color:nth-child(19){
+    background: #AA1947;
+}
+.color:nth-child(20){
+    background: #B399A6;
+}
+.color:nth-child(21){
+    background: #280635;
+}
+.color:nth-child(22){
+    background: #4C2074;
+}
+.color:nth-child(23){
+    background: #D4156D;
+}
+.color:nth-child(24){
+    background: #F6BC13;
+}
+.color:nth-child(25){
+    background: #DDDDDD;
+}
 
 
 

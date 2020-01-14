@@ -1,6 +1,6 @@
 'use strict';
 
-////////////////////////////////////////////////////show and hide mobile and desktop menu//////////////////////////////////////////////////////////////////////////////////////////
+//show and hide mobile and desktop menu
 const showMenu = () => {
 	const mobMenu = document.querySelector('.aside2');
 	const menu = document.querySelector('.aside1');
@@ -47,7 +47,7 @@ const showMenu = () => {
 	}
 };
 
-//////////////////////////////////////////////////////////////show and hide modal window///////////////////////////////////////////////////////////////////////////////////////////////////////
+//show and hide modal window
 const modalWindow = () =>{
 	const modal = document.getElementById('modal');
 	const btn = document.getElementById('btn');
@@ -79,7 +79,7 @@ const modalWindow = () =>{
 	});
 };
 
-/////////////////////////////////////////////////////////////////Show and hide notifications////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Show and hide notifications
 const notification = () => {
 	const modal1 = document.getElementById('modal1');
 	console.log(modal1);
@@ -95,11 +95,29 @@ const notification = () => {
 	});
 };
 
+const colors = () => {
+	const color = document.querySelectorAll('.color');
 
+	for (let i = 0; i < color.length; i++) {
+		color[i].addEventListener('click', function findColor(event) {
+			if (event.target === color[i]) {
+				if (color[i].classList.contains('pickColor')) {
+					color[i].previousElementSibling.classList.remove('pickColor');
+					color[i].classList.remove('pickColor');
+				} else {
+					color[i].classList.add('pickColor');
+				}
+			}
+		});
+
+		
+	}
+
+};
 
 showMenu();
 modalWindow();
 notification();
-
+colors();
 
 window.addEventListener('resize', showMenu);
