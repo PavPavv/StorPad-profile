@@ -1948,13 +1948,13 @@ form div label{
     color: #442B69;
 }
 .legs div:first-child{
-    margin-bottom: 8.6vw;;
+    margin-bottom: 7.4vw;;
 }
 .legs div:nth-child(2){
     margin-bottom: 11.4vw;
 }
 .legs div:nth-child(3){
-    margin-bottom: 6vw;
+    margin-bottom: 5vw;
 }
 .legs span{
     font-size: 0.4375em;
@@ -1996,6 +1996,12 @@ form div label{
 .tool:first-child{
     height: 9.8vw;
 }
+.tool:nth-child(2){
+    height: 13.8vw;
+}
+.tool:nth-child(3){
+    height: 6.8vw;
+}
 .toolsHeader{
     position: relative;
     padding-left: 10px;
@@ -2015,7 +2021,29 @@ form div label{
     border-width: 6px 5px 0 5px;
     border-color: #442B69 transparent transparent transparent;
 }
+.tool:nth-child(3) .toolsHeader:before{
+    content: '';
+    position: relative;
+    top: 10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent #442B69;
+}
 .tool:nth-child(2) .toolsHeader:before{
+    content: '';
+    position: relative;
+    top: 8px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent #442B69;
+}
+.tool:nth-child(4) .toolsHeader:before{
     content: '';
     position: relative;
     top: 8px;
@@ -2033,6 +2061,13 @@ form div label{
     font-size: 0.875em;
     line-height: 1.425em;
     color: #7D7D7D;
+}
+.scheme{
+    display: flex;
+    flex-direction: column;
+}    
+.scheme:first-child{
+    margin-right: 6vw;
 }
 #input{
     margin-top: 0.5vw;
@@ -2053,6 +2088,9 @@ form div label{
     border: 0;
     color: #ffffff;
     background: #49326C;    
+}
+#menuSet{
+    width: 10.67vw;
 }
 .pallete{
     margin-top: 1.5vw;;
@@ -2175,13 +2213,57 @@ form div label{
 .color:nth-child(25){
     background: #DDDDDD;
 }
-
-
-
-
-
-
-
+.unselected{
+    color: #979797!important;
+}
+.tool:nth-child(2) .unselected:before{
+    content: '';
+    position: relative;
+    display: block;
+    top: 8px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent #979797;
+}
+.colorPad{
+    margin-top: 1.5vw;
+}
+.custom{
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+    overflow: hidden;
+    width: 10.2vw;
+    height: 8.75vw;
+    border: 0;
+    border-radius: 2px;
+}
+.custom img{
+    max-width: 100%;
+}
+.scale{
+    position: relative;
+    width: 0.5vw;
+    height: 8.75vw;
+    border: 0;
+    border-radius: 16px;
+    background: linear-gradient(to top, blue , green, yellow, orange, red);
+}
+.range{
+    position: absolute;
+    left: 0;
+    width: 0.5vw;
+    height: 0.5vw;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+.moreWidth{
+    width: 23vw!important;
+}
 
 
 /***************************************************************************************************************************************/
