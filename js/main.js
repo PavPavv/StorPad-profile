@@ -115,9 +115,22 @@ const colors = () => {
 
 };
 
+const lineSet = () => {
+	const line = document.querySelector('#middleLine');
+	
+	if (window.innerWidth < 1011) {
+		line.style.height = '400px'
+	} else {
+		line.style.height = '238px'
+	}
+
+};
+
 showMenu();
 modalWindow();
 notification();
 colors();
+lineSet();
 
 window.addEventListener('resize', showMenu);
+window.addEventListener('resize', lineSet);

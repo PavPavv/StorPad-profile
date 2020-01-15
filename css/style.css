@@ -1948,13 +1948,13 @@ form div label{
     color: #442B69;
 }
 .legs div:first-child{
-    margin-bottom: 7.4vw;;
+    margin-bottom: 142px!important;
 }
 .legs div:nth-child(2){
-    margin-bottom: 11.4vw;
+    margin-bottom: 219px!important;
 }
 .legs div:nth-child(3){
-    margin-bottom: 5vw;
+    margin-bottom: 96px!important;
 }
 .legs span{
     font-size: 0.4375em;
@@ -1994,13 +1994,13 @@ form div label{
     flex-direction: column;
 }
 .tool:first-child{
-    height: 9.8vw;
+    height: 188px;
 }
 .tool:nth-child(2){
-    height: 13.8vw;
+    height: 265px;
 }
 .tool:nth-child(3){
-    height: 6.8vw;
+    height: 131px;
 }
 .toolsHeader{
     position: relative;
@@ -2245,15 +2245,33 @@ form div label{
 }
 .scale{
     position: relative;
-    width: 0.5vw;
-    height: 8.75vw;
-    border: 0;
-    border-radius: 16px;
-    background: linear-gradient(to top, blue , green, yellow, orange, red);
+    height: 0.5vw;
+    width: 8.75vw;
+    margin-top: 20.5%;
+    margin-left: -20%;
+    transform: rotate(270deg);
 }
 .range{
-    position: absolute;
-    left: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 16px;
+    background: linear-gradient(to right, blue , green, yellow, orange, red);
+    outline: none;
+}
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.5vw;
+    height: 0.5vw;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+.range::-moz-range-thumb{
     width: 0.5vw;
     height: 0.5vw;
     border: 2px solid #ffffff;
@@ -2264,7 +2282,6 @@ form div label{
 .moreWidth{
     width: 23vw!important;
 }
-
 
 /***************************************************************************************************************************************/
 /* media queries */
@@ -2812,6 +2829,18 @@ form div label{
     .order tr td:nth-child(2){
         width: 25vw!important;
     }
+    .color:first-child:before{
+        top: 7px;
+        left: -12px;
+        width: 5px;
+        height: 5px;
+    }
+    .color:nth-child(5n+6):before{
+        top: 5px;
+        left: -12px;
+        width: 5px;
+        height: 5px;
+    }
 }
 @media(max-width: 1244px) {
     .numbersWrap{
@@ -3054,6 +3083,57 @@ form div label{
     }
     .sum{
         height: 4.5vw;
+    }
+    .colorScheme{
+        display: flex;
+        flex-direction: column;
+    } 
+    .scheme:first-child{
+        margin-bottom: 2vw;
+    }
+    .lineSet:nth-child(2) {
+        height: 278px;
+    }
+    .legs div:nth-child(2){
+        margin-bottom: 394px!important;
+    }
+    .tool:nth-child(2){
+        height: 415px;
+    }
+    .tool:nth-child(3) {
+        height: 150px;
+    }
+    .scale {
+        height: 7px;
+        width: 91px;
+        margin-top: 17.5%;
+        margin-left: -40px;
+    }
+    .range::-webkit-slider-thumb{
+        width: 7px;
+        height: 7px;
+    }
+    .range::-moz-range-thumb{
+        width: 7vw;
+        height: 7vw;
+        border: 1px solid #ffffff;
+    }
+    .pallete {
+        margin-top: 1.5vw;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: flex-end;
+        width: 122px;
+        height: 92px;
+    }
+    .custom {
+        margin-left: 0vw;
+        width: 103px;
+        height: 88px;
+    }
+    .color {
+        width: 17px;
+        height: 14px;
     }
 }
 @media(max-width: 949px){
