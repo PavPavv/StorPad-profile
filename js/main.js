@@ -119,7 +119,9 @@ const lineSet = () => {
 	const line = document.querySelector('#middleLine');
 	
 	if (window.innerWidth < 1011) {
-		line.style.height = '400px'
+		line.style.height = '302px'
+	} else if (window.innerWidth < 389) {
+		line.style.height = '320px'
 	} else {
 		line.style.height = '238px'
 	}

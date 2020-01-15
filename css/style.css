@@ -2535,7 +2535,7 @@ form div label{
         margin: 0 auto;
         z-index: 7;
         position: absolute;
-        top: 30%;
+        top: 15%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -3089,16 +3089,16 @@ form div label{
         flex-direction: column;
     } 
     .scheme:first-child{
-        margin-bottom: 2vw;
+        margin-bottom: 40px;
     }
     .lineSet:nth-child(2) {
         height: 278px;
     }
     .legs div:nth-child(2){
-        margin-bottom: 394px!important;
+        margin-bottom: 301px!important;
     }
     .tool:nth-child(2){
-        height: 415px;
+        height: 318px;
     }
     .tool:nth-child(3) {
         height: 150px;
@@ -3134,6 +3134,22 @@ form div label{
     .color {
         width: 17px;
         height: 14px;
+    }
+    .tool:first-child .toolsHeader:before{
+        top: 8px;
+        left: -10px;
+    }
+    .tool:nth-child(3) .toolsHeader:before{
+        top: 8px;
+        left: -10px;
+    }
+    .tool:nth-child(2) .toolsHeader:before{
+        top: 6px;
+        left: -10px;
+    }
+    .tool:nth-child(4) .toolsHeader:before{
+        top: 6px;
+        left: -10px;
     }
 }
 @media(max-width: 949px){
@@ -3261,6 +3277,12 @@ form div label{
     .checkpoints{
         margin: 9vw 0 7vw 0;
     }
+    .tools{
+        margin-left: 20px;
+    }
+    .toolsHeader{
+        margin-bottom: 10px;
+    }
 } 
 @media(max-width: 800px){
     .col{
@@ -3295,7 +3317,7 @@ form div label{
         width: 90%;
         z-index: 7;
         position: absolute;
-        top: 30%;
+        top: 15%;
         left: 50%;
         padding: 3.125vw 3.125vw 2.625vw 3.125vw;
         background: #ffffff;
@@ -3377,6 +3399,49 @@ form div label{
     .textPoints{
         line-height: 1.5!important;
     }
+    .wrapperSet{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .display {
+        width: 350px;
+        height: 640px;
+    }
+    .settings{
+        margin-left: 0;
+        width: 90%;
+    }
+    .tool input[type="text"]::placeholder{
+        color: #707683;
+        font-size: 0.7em;
+    }
+    .toolsBody,
+    .moreWidth{
+        width: 100%!important;
+    }
+    .scale{
+        margin-top: 41px;
+    }
+    .checkpointsSet .check:nth-child(2), .checkpointsSet .check:nth-child(3) {
+        margin-top: 5px;
+    }
+    .checkpointsSet .check:first-child {
+        margin-left: 0.5vw;
+    }
+    .checkpointsSet .check {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .legs div:first-child{
+        margin-bottom: 154px!important;
+    }
+    .tool:first-child {
+        height: 193px;
+    }
+    .tool:nth-child(2) {
+        height: 327px;
+    }
 }
 @media (max-width: 700px) {
     body{
@@ -3409,7 +3474,7 @@ form div label{
         margin: 0 auto;
         z-index: 7;
         position: absolute;
-        top: 30%;
+        top: 15%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -3428,6 +3493,22 @@ form div label{
     }
     .arrowInfo{
         transform: rotate(90deg);
+    }
+    #menuSet{
+        margin-top: 10px;
+        width: 60px;
+    }
+    .legs div:first-child {
+        margin-bottom: 162px!important;
+    }
+    .legs div:nth-child(2) {
+        margin-bottom: 290px!important;
+    }
+    .legs div:nth-child(3) {
+        margin-bottom: 120px!important;
+    }
+    .tool input[type="text"] {
+        width: 100px;
     }
 }
 @media(max-width: 450px) {
@@ -3473,5 +3554,28 @@ form div label{
         top: 43%;
         width: px;
         height: px;
+    }
+    .display {
+        width: 250px;
+        height: 540px;
+    }
+    .tool:first-child .toolsHeader:before{
+        top: 6px;
+        left: -10px;
+    }
+    .tool:nth-child(3) .toolsHeader:before{
+        top: 2px;
+        left: -10px;
+    }
+    .tool:nth-child(2) .toolsHeader:before{
+        top: 2px;
+        left: -10px;
+    }
+    .tool:nth-child(4) .toolsHeader:before{
+        top: 2px;
+        left: -10px;
+    }
+    .tool:first-child{
+        height: 200px;
     }
 }
