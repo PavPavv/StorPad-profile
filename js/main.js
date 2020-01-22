@@ -13,6 +13,9 @@ const showMenu = () => {
 		menu.style.marginLeft = '-100%';
 		wrapper.style.paddingLeft = '30px';
 		mobMenu.style.marginLeft = '0%';
+		setTimeout(() => {
+			window.location.reload(true);
+		}, 1000);
 	});
 	mobMenu.addEventListener("mouseover", func, false);
 	function func() {
@@ -81,17 +84,26 @@ const modalWindow = () =>{
 
 //Show and hide notifications
 const notification = () => {
-	const modal1 = document.getElementById('modal1');
-	console.log(modal1);
 	const modal = document.getElementById('modal1');
 	const notifyBtn = document.querySelector('.notification');
 	const closeNotification = document.querySelector('.closeNotify');
+	const windowHeight = document.documentElement.clientHeight;
 
-	notifyBtn.addEventListener('click', function() {
-		modal.classList.add('active');
+	const data = document.querySelector('.data');
+	const dataHeight = data.clientHeight;
+
+
+	notifyBtn.addEventListener('click', function () {
+		if (windowHeight > dataHeight) {
+			data.classList.add('fullHeight');
+			modal.classList.add('active');
+		} else {
+			modal.classList.add('active');
+		}
 	});
-	closeNotification.addEventListener('click', function() {
+	closeNotification.addEventListener('click', function () {
 		modal.classList.remove('active');
+		data.classList.remove('fullHeight');
 	});
 };
 

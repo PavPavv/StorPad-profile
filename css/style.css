@@ -112,6 +112,7 @@ button{
     width: 100%;
     height: 48.4375vw;
 }
+
 /*
 general settings:
 color: #1D191F;        //also darkGray     
@@ -429,6 +430,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    white-space: nowrap;
     padding: 1vw 0;
 }
 .topWrapper{
@@ -722,7 +724,7 @@ tr{
     width: 27.13vw;
     z-index: 7;
     position: absolute;
-    top: 1.3vw;
+    top: 4.3vw;
     right: 4vw;
     padding: 3.125vw 3.125vw 2.625vw 3.125vw;
     background: #ffffff;
@@ -2383,7 +2385,7 @@ form div label{
         display: flex;
     }
     .modalWrap{
-        top: 2vw;
+        top: 6vw;
         right: 4vw;
     }
     .quantity{
@@ -2414,7 +2416,7 @@ form div label{
     }
     header{
         height: 40px;
-        padding-right: 40px;
+        /* padding-right: 40px; */
     }
     .user-icon{
         width: 25px;
@@ -2535,7 +2537,7 @@ form div label{
         margin: 0 auto;
         z-index: 7;
         position: absolute;
-        top: 15%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -3300,7 +3302,7 @@ form div label{
     }
     .table tr td:nth-child(4){
         padding-left: 6vw;
-        padding-right: 0;
+        padding-right: -1px;
     }
     .table1 tr td:nth-child(2){
         padding-left: 0;
@@ -3317,7 +3319,7 @@ form div label{
         width: 90%;
         z-index: 7;
         position: absolute;
-        top: 15%;
+        top: 30%;
         left: 50%;
         padding: 3.125vw 3.125vw 2.625vw 3.125vw;
         background: #ffffff;
@@ -3442,6 +3444,48 @@ form div label{
     .tool:nth-child(2) {
         height: 327px;
     }
+    .block0{
+        height: 350px;
+    }
+    .block0 img{
+        height: 350px;
+    }
+    .block1{
+        height: 350px;
+    }
+    .block1 img{
+        height: 350px;
+    }
+    .block2{
+        height: 350px;
+    }
+    .block3{
+        height: 654px;
+    }
+    .table tbody{
+        height: 600px;
+    }
+    .topPanel{
+        font-size: 9px;
+    }
+    .topPanel span{
+        padding-right: 20px;
+    }
+    .topPanel:after{
+        top: 37%;
+        right: -5px;
+        width: 6px;
+        height: 6px;
+    }
+    .set-ic{
+        width: 10px;
+        height: 10px;
+        margin-left: 2vw;
+    }
+    .modalWrap,
+    .modalWrap1{
+        top: 200px;
+    }
 }
 @media (max-width: 700px) {
     body{
@@ -3457,6 +3501,42 @@ form div label{
         width: 100%;
         margin-right: 0;
     }
+    .dataTop > div{
+        width: 300px;
+    }
+    .topPanel{
+        font-size: 12px;
+    }
+    .topPanel span{
+        cursor: pointer;
+        padding-right: 20px;
+    }
+    .topPanel:after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 37%;
+        right: -5px;
+        width: 10px;
+        height: 10px;
+        background: url('../i/icon/arrow-down.png') no-repeat;
+        background-size: contain;
+    }
+    .set-ic{
+        width: 14px;
+        height: 14px;
+        margin-left: 2vw;
+        background-size: contain;
+    }
+    .block0 {
+        height: 450px;
+    }
+    .block1{
+        height: 450px;
+    }
+    .block2{
+        height: 450px;
+    }
 }
 @media(max-width: 544px){
     tr th{
@@ -3465,16 +3545,13 @@ form div label{
     tr td{
         font-size: 0.5875em;
     }
-    .topPanel{
-        font-size: 0.65em;
-    }
     .modalWrap1{
         width: 97%;
         height: 57.9687vw;
         margin: 0 auto;
         z-index: 7;
         position: absolute;
-        top: 15%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -3529,6 +3606,15 @@ form div label{
         margin-top: 7vw;
         margin-bottom: 7vw;
     }
+    .block0 img {
+        height: 250px;
+    }
+    .block1 img{
+        height: 250px;
+    }
+    .block2{
+        height: 250px;
+    }
 }
 @media(max-width: 430px) {
     .closeMenu{
@@ -3544,6 +3630,23 @@ form div label{
         z-index: 15;
         width: 100%;
     }
+    .topPanel{
+        font-size: 10px;
+    }
+    .topPanel span{
+        padding-right: 20px;
+    }
+    .topPanel:after{
+        top: 37%;
+        right: -5px;
+        width: 8px;
+        height: 8px;
+    }
+    .set-ic{
+        width: 12px;
+        height: 12px;
+        margin-left: 2vw;
+    }
 }
 @media(max-width: 408px) {
     body{
@@ -3552,8 +3655,8 @@ form div label{
     .notify:before{
         left: -3.5%;
         top: 43%;
-        width: px;
-        height: px;
+        width: 5px;
+        height: 5px;
     }
     .display {
         width: 250px;
@@ -3577,5 +3680,59 @@ form div label{
     }
     .tool:first-child{
         height: 200px;
+    }
+    .modalWrap,
+    .modalWrap1{
+        top: 130px;
+    }
+    .closeNotify{
+        width: 10px!important;
+        height: 10px;
+    }
+    
+}
+@media(max-width: 380px) {
+    .topPanel{
+        font-size: 8px;
+    }
+    .block0{
+        height: 180px;
+    }
+    .block1{
+        height: 180px;
+    }
+    .block0 img {
+        height: 150px;
+    }
+    .block1 img{
+        height: 150px;
+    }
+    .block2{
+        height: 150px;
+    }
+    .block3{
+        height: 336px;
+    }
+    .table tbody{
+        height: 300px;
+    }
+}
+@media(max-width: 320px) {
+    .topPanel{
+        font-size: 9px;
+    }
+    .topPanel span{
+        padding-right: 20px;
+    }
+    .topPanel:after{
+        top: 37%;
+        right: -5px;
+        width: 6px;
+        height: 6px;
+    }
+    .set-ic{
+        width: 10px;
+        height: 10px;
+        margin-left: 2vw;
     }
 }
