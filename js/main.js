@@ -51,7 +51,7 @@ const showMenu = () => {
 };
 
 //show and hide modal window
-const modalWindow = () =>{
+/* const modalWindow = () =>{
 	const modal = document.getElementById('modal');
 	const btn = document.getElementById('btn');
 	const data = document.querySelector('.data');
@@ -80,7 +80,7 @@ const modalWindow = () =>{
 				return; 
 		}
 	});
-};
+}; */
 
 //Show and hide notifications
 const notification = () => {
@@ -141,7 +141,7 @@ const lineSet = () => {
 };
 
 showMenu();
-modalWindow();
+//modalWindow();
 notification();
 colors();
 lineSet();

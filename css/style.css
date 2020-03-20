@@ -9,7 +9,7 @@ body{
     position: relative;
     height: 100%;
     font-size: 16px;
-    background: #F5F6F8; 
+    background: #F5F6F8;
 }
 h1,
 h2,
@@ -115,7 +115,7 @@ button{
 
 /*
 general settings:
-color: #1D191F;        //also darkGray     
+color: #1D191F;        //also darkGray
 color: #192a3e;        //darkGray
 color: #8C7F98;        //moreGray
 color: #DFE0EB        // and another gray
@@ -926,7 +926,7 @@ form div label{
    font-family: 'OpenSans-Regular';
    font-size: 0.6875em;
    line-height: 0.9375em;
-   color: #858585; 
+   color: #858585;
 }
 .message{
     font-family: 'OpenSans-Regular';
@@ -1220,7 +1220,7 @@ form div label{
 }
 .row3 tr td:last-child{
     width: 8.9vw;
-    padding-right: 1vw;
+    padding-right: 5vw;
     font-weight: bold;
 }
 
@@ -1245,7 +1245,7 @@ form div label{
 }
 .custNum{
     font-size: 1.5em;
-    color: #7D8997; 
+    color: #7D8997;
 }
 .numPercentage{
     margin-right: 1vw;
@@ -1488,7 +1488,7 @@ form div label{
 }
 .displaysTable table tr th:first-child,
 .displaysTable table tr td:first-child{
-    width: 4.5vw;
+    width: 5.5vw;
 }
 .displaysTable table tr th:nth-child(2),
 .displaysTable table tr td:nth-child(2){
@@ -2067,7 +2067,7 @@ form div label{
 .scheme{
     display: flex;
     flex-direction: column;
-}    
+}
 .scheme:first-child{
     margin-right: 6vw;
 }
@@ -2089,7 +2089,7 @@ form div label{
     font-family: 'Gilroy_Medium';
     border: 0;
     color: #ffffff;
-    background: #49326C;    
+    background: #49326C;
 }
 #menuSet{
     width: 10.67vw;
@@ -3089,7 +3089,7 @@ form div label{
     .colorScheme{
         display: flex;
         flex-direction: column;
-    } 
+    }
     .scheme:first-child{
         margin-bottom: 40px;
     }
@@ -3229,7 +3229,7 @@ form div label{
     .table1 tr th:nth-child(6),
     .row3 tr td:nth-child(6){
         width: 52px!important;
-        padding: 0;  
+        padding: 0;
     }
     .table1 tr th:nth-child(7),
     .row3 tr td:nth-child(7){
@@ -3285,7 +3285,7 @@ form div label{
     .toolsHeader{
         margin-bottom: 10px;
     }
-} 
+}
 @media(max-width: 800px){
     .col{
         flex-direction: column;
@@ -3493,7 +3493,7 @@ form div label{
     }
     h2{
         font-size: 0.7em;
-    }  
+    }
 }
 @media(max-width: 667px) {
     .numbersWrap{
@@ -3689,7 +3689,7 @@ form div label{
         width: 10px!important;
         height: 10px;
     }
-    
+
 }
 @media(max-width: 380px) {
     .topPanel{
