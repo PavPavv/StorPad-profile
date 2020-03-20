@@ -28,7 +28,7 @@ li{
 }
 a{
     text-decoration: none;
-    color: #ffffff;
+    color: inherit;
 }
 p{
     margin: 0;
