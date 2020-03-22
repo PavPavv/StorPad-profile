@@ -130,13 +130,15 @@ const colors = () => {
 const lineSet = () => {
 	const line = document.querySelector('#middleLine');
 	
-	if (window.innerWidth < 1011) {
-		line.style.height = '302px'
-	} else if (window.innerWidth < 389) {
-		line.style.height = '320px'
-	} else {
-		line.style.height = '238px'
-	}
+	if (line) {
+    if (window.innerWidth < 1011) {
+      line.style.height = '302px'
+    } else if (window.innerWidth < 389) {
+      line.style.height = '320px'
+    } else {
+      line.style.height = '238px'
+    }
+  }
 
 };
 

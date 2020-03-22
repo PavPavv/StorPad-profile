@@ -3486,6 +3486,9 @@ form div label{
     .modalWrap1{
         top: 200px;
     }
+    #donutchart, #chart_div{
+      height: 300px!important;
+    }
 }
 @media (max-width: 700px) {
     body{

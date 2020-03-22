@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="i/icon/page-ic.png" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
     <!--ASIDE MENU-PANEL-->
@@ -32,7 +33,7 @@
                 <div></div>
                 <div></div>
             </div>
-            <div class="options-descr">Settings</div>
+            <div class="options-descr">Настройки</div>
         </div>
     </aside>
 
@@ -222,8 +223,9 @@
                         </div>
                         <div class="number customers">
                             <div class="numBody">
-                                <div class="numPercentage">
-                                    <img src="i/icon/customers_percentages.svg" alt="">
+                                <div class="numPercentage" style="position: relative; padding-left: 50px;">
+                                    <!-- <img src="i/icon/customers_percentages.svg" alt=""> -->
+                                    <div id="donutchart2" style="position: absolute; left: -15px; top: -10px; width: 72px; height: 72px;"></div>
                                 </div>
                                 <div class="quantity">
                                     <div></div>
@@ -678,5 +680,6 @@
         </section>
 
     <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
 </body>
 </html>
