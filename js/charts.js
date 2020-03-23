@@ -33,7 +33,7 @@ function drawChart() {
 }
 
 //Stacked bar chart
-google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.load('current', {'packages':['line']});
 google.charts.setOnLoadCallback(drawStacked);
 
 function drawStacked() {
@@ -162,13 +162,44 @@ function drawChart2() {
       position: 'none'
     },
     colors: ['#7D8997', '#DCDCDC'],
-    chartArea: {
-      width: '62px',
-      height: '62px'
-    },
     enableInteractivity: false
   };
 
   let chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+  chart.draw(data, options);
+}
+
+//Display donut chart
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart3);
+function drawChart3() {
+  let data = google.visualization.arrayToDataTable([
+    ['Task', ''],
+    ['В пути к клиенту',     75],
+    ['Возврат',      12],
+    ['Ожидает оплаты',    13]
+  ]);
+
+  let options = {
+    title: '',
+    pieHole: 0.7,
+    backgroundColor: '#F5F6F8',
+    colors: ['#48D2A0', '#F96E7D', '#F79E0F'],
+    chartArea: {
+      left: 0,
+      top: 0
+    },
+    fontName: 'Gilroy_Medium',
+    legend: {
+      alignment: 'center'
+    },
+    pieSliceTextStyle: {
+      color: '#000000',
+      fontName: 'Gilroy_Bold',
+      fontSize: 16
+    }
+  };
+
+  let chart = new google.visualization.PieChart(document.getElementById('donutchart3'));
   chart.draw(data, options);
 }

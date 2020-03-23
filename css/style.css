@@ -1249,6 +1249,8 @@ form div label{
 }
 .numPercentage{
     margin-right: 1vw;
+    position: relative; 
+    padding-left: 50px;
 }
 .customersTable{
     margin-top: 2vw;
@@ -2284,6 +2286,27 @@ form div label{
 .moreWidth{
     width: 23vw!important;
 }
+
+#donutchart2{
+  position: absolute; 
+  left: -0.5vw; 
+  top: -0.5vw; 
+  width: 62px; 
+  height: 62px;
+}
+#donutchart3{
+}
+/* .chartInner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+} */
+
 
 /***************************************************************************************************************************************/
 /* media queries */

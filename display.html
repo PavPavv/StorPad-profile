@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="i/icon/page-ic.png" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
     <!--ASIDE MENU-PANEL-->
@@ -297,7 +298,8 @@
                     </div>
                 </div>
                 <div class="visual">
-                    <img src="i/content/visual.svg" alt="">
+                    <!-- <img src="i/content/visual.svg" alt=""> -->
+                    <div id="donutchart3" style="width: 500px; height: 340px;"></div>
                     <div class="info">
                         <div>Город: <span>Москва</span></div>
                         <div>Адрес: <span>Тверская улица, дом 13</span></div>
@@ -313,7 +315,7 @@
                 <table cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Order ID</th>
+                            <th>ID заказа</th>
                             <th>Дата заказа</th>
                             <th>Клиент</th>
                             <th>Сумма</th>
@@ -780,6 +782,7 @@
         </section>
         <!--  -->
 
-    <script src="js/main.js"></script>    
+    <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
 </body>
 </html>
