@@ -359,9 +359,6 @@ ul li:after{
 .aside2 .options{
     padding: 200px 9px;
 }
-.aside2 .options-descr{
-
-}
 .aside2 .options-ic{
     margin-right: 2px;
 }
@@ -386,6 +383,7 @@ header{
     background: #ffffff;
 }
 .user-icon{
+    position: relative;
     width: 1.3vw;
     height: 1.3vw;
     margin-right: 0.5vw;
@@ -722,14 +720,19 @@ tr{
     visibility: initial;
 }
 .modalWrap{
+    display: none;
     width: 27.13vw;
-    z-index: 7;
+    z-index: 77;
     position: absolute;
-    top: 4.3vw;
-    right: 4vw;
+    top: 62px;
+    right: -97px;
     padding: 3.125vw 3.125vw 2.625vw 3.125vw;
     background: #ffffff;
     border-radius: 2px;
+    border: 1px solid #8B7F98;
+}
+.modalWrap.active{
+  display: block;
 }
 h3{
     font-family: 'Gilroy_Bold';
@@ -795,9 +798,10 @@ form div label{
 /*modal top arrow*/
 .modalWrap:after{
     content: '';
+    display: block;
     position: absolute;
     z-index: 5;
-    top: -33px;
+    top: -34px;
     right: 68px;
     width: 0;
     height: 0;
@@ -807,6 +811,7 @@ form div label{
 }
 .modalWrap:before{
     content: '';
+    display: block;
     position: absolute;
     z-index: 6;
     top: -32px;
@@ -840,7 +845,7 @@ form div label{
     height: 27.9687vw;
     z-index: 7;
     position: absolute;
-    top: 35%;
+    top: 300px;
     left: 50%;
     padding: 3.125vw 3.125vw 2.625vw 3.125vw;
     background: #ffffff;
@@ -1705,9 +1710,6 @@ form div label{
 .order tr th:after{
     display: none;
 }
-.order tbody{
-    /* height: 100%; */
-}
 .order tr th:first-child,
 .order tr td:first-child{
     width: 5vw!important;
@@ -2295,8 +2297,6 @@ form div label{
   width: 62px; 
   height: 62px;
 }
-#donutchart3{
-}
 /* .chartInner{
   position: absolute;
   top: 0;
@@ -2327,6 +2327,7 @@ form div label{
     }
     /*fix aside for good readability*/
     .aside1{
+        z-index: 80;
         width: 173px;
     }
     .logo{
@@ -2407,10 +2408,6 @@ form div label{
     }
     .analyticsWrap{
         display: flex;
-    }
-    .modalWrap{
-        top: 6vw;
-        right: 4vw;
     }
     .quantity{
         height: 3.5vw;
@@ -2551,22 +2548,18 @@ form div label{
         top: 47%;
         left: 90px;
     }
-    .modalWrap{
-        top: calc(2% + 4px);
-        right: 3.5%;
-    }
     .modalWrap1{
-        width: 90%;
-        height: 37.9687vw;
+        width: 60%;
+        height: 28.6687vw;
         margin: 0 auto;
         z-index: 7;
         position: absolute;
-        top: 25%;
+        top: 300px;
         left: 50%;
         transform: translate(-50%,-50%);
     }
     .bodyNotify{
-        height: 45.9687vw;
+        height: 25.9687vw;
     }
     .numbers{
         width: 100%;
@@ -3041,21 +3034,6 @@ form div label{
         top: 47%;
         left: 70px;
     }
-    .modalWrap{
-        top: calc(1.1% + 8px);
-        right: 5.5%;
-    }
-    /*modal top arrow*/
-    .modalWrap:after{
-        top: -23px;
-        right: 40px;
-        border-width: 0 30.5px 24px 30.5px;
-    }
-    .modalWrap:before{
-        top: -22px;
-        right: 40px;
-        border-width: 0 30px 23px 30px;
-    }
     .table1 tr th:nth-child(5){
         padding-left: 1vw;
     }
@@ -3077,7 +3055,7 @@ form div label{
     .table1 tr th:nth-child(4):after{
         top: 47%;
         left: 40px;
-        border-width: 3px 2.5px 0 2.5px;px;
+        border-width: 3px 2.5px 0 2.5px;
     }
     .table1 tr th:nth-child(5):after{
         top: 47%;
@@ -3089,7 +3067,7 @@ form div label{
         left: 40px;
         border-width: 3px 2.5px 0 2.5px;
     }
-    .table1 tr th:nth-child(7):after{e;
+    .table1 tr th:nth-child(7):after{
         top: 47%;
         left: 40px;
         border-width: 3px 2.5px 0 2.5px;
@@ -3345,15 +3323,9 @@ form div label{
     }
     /*modal window tablet*/
     .modalWrap{
-        width: 90%;
-        z-index: 7;
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        padding: 3.125vw 3.125vw 2.625vw 3.125vw;
-        background: #ffffff;
-        border-radius: 2px;
-        transform: translate(-50%,-50%);
+        width: 47.13vw;
+        right: -100%;
+        transform: rotate(-100%, -100%);
     }
     /*modal top arrow*/
     .modalWrap:after{
@@ -3511,9 +3483,14 @@ form div label{
         height: 10px;
         margin-left: 2vw;
     }
-    .modalWrap,
     .modalWrap1{
+        width: 70%;
+        height: 37.6687vw;
         top: 200px;
+        left: 50%;
+    }
+    .bodyNotify{
+        height: 48.9687vw;
     }
     #donutchart, #chart_div{
       height: 300px!important;
@@ -3647,6 +3624,10 @@ form div label{
     .block2{
         height: 250px;
     }
+    .modalWrap{
+        width: 77.13vw;
+        right: -120px;
+    }
 }
 @media(max-width: 430px) {
     .closeMenu{
@@ -3659,7 +3640,6 @@ form div label{
         background: url(../i/icon/closeModal.svg) center center no-repeat;
     }
     .aside1{
-        z-index: 15;
         width: 100%;
     }
     .topPanel{
@@ -3766,5 +3746,9 @@ form div label{
         width: 10px;
         height: 10px;
         margin-left: 2vw;
+    }
+    .modalWrap{
+        width: 77.13vw;
+        right: -126px;
     }
 }

@@ -50,21 +50,26 @@ const showMenu = () => {
 	}
 };
 
-//show and hide modal window
+
+
+
+//show and hide 'login' modal window
 const modalWindow = () =>{
 	const modal = document.getElementById('modal');
 	const btn = document.getElementById('btn');
 	const data = document.querySelector('.data');
 	const dataHeight = data.clientHeight;
 	const windowHeight = document.documentElement.clientHeight;
-	//const modalWrap = document.querySelector('.modalWrap');
+	const modalWrap = document.querySelector('.modalWrap');
 	//console.log(btn);
 	function showModal() {
 		if (windowHeight > dataHeight) {
 			data.classList.add('fullHeight');
 			modal.classList.add('active');
+      modalWrap.classList.add('active');
 		} else{
 			modal.classList.add('active');
+      modalWrap.classList.add('active');
 		}
 		
 	};
@@ -75,6 +80,7 @@ const modalWindow = () =>{
 		if (event.target === modal || event.target === btn) {
 				data.classList.remove('fullHeight');
 				modal.classList.remove('active');
+        modalWrap.remove('active');
 				clearInterval(interval);
 		} else {
 				return; 
