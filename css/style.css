@@ -254,6 +254,7 @@ ul li:after{
     font-family: 'Gilroy_Medium';
     font-size: 0.8125em;
     color: #1D191F;
+    cursor: pointer;
 }
 .options-ic{
     display: flex;
@@ -2867,6 +2868,11 @@ form div label{
         height: 5px;
     }
 }
+
+@media(max-width: 1300px) {
+
+}
+
 @media(max-width: 1244px) {
     .numbersWrap{
         width: 100%;
