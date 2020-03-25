@@ -211,7 +211,8 @@
             </div>
             <!--map-->
             <div class="map">
-                <img src="i/content/map.svg" alt="map">
+                <!-- <img src="i/content/map.svg" alt="map"> -->
+                <div id="map"></div>
             </div>
             <!--DISPLAYS TABLE-->
             <div class="displaysTable">
@@ -667,7 +668,7 @@
         const trtd = document.querySelectorAll('.displaysTable tbody tr');
         console.log(trtd);
 
-        for (let i = 0; i, trtd.length; i++) {
+        for (let i = 0; i < trtd.length; i++) {
             trtd[i].addEventListener('click', function () {
                 console.log('it is working!');
                 window.location.href = 'display.html';
@@ -675,5 +676,8 @@
         }
     </script>    
     <script src="js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A64cacc285e7212546561d160fafde1b56331631452b33e41fa49c2b2821a32b8&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true&amp;id=map"></script>
 </body>
 </html>
