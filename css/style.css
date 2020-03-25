@@ -2820,7 +2820,7 @@ form div label{
         display: flex;
         flex: 1;
         justify-content: flex-end;
-        align-items: flex-end;
+        align-items: flex-start;
         margin-right: 0;
     }
     .visual > .info{
@@ -2865,9 +2865,13 @@ form div label{
     }
 }
 
-@media(max-width: 1300px) {
-
-}
+/* @media(max-width: 1400px) {
+    .info{
+      z-index: 100;
+      margin-top: -100px;
+      color: red!important;
+    }
+} */
 
 @media(max-width: 1244px) {
     .numbersWrap{
@@ -3016,6 +3020,12 @@ form div label{
         border: 7px solid #EBECF9;
         border-radius: 16px;
     }
+}
+@media(max-width: 1070px) {
+  .analytics{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media(max-width: 1010px) {
      body{
@@ -3180,9 +3190,6 @@ form div label{
     .table1 tr td:nth-child(4) {
         padding-left: 0;
         padding-right: 0;
-    }
-    .analytic > div:first-child {
-        flex-direction: column;
     }
 }
 @media(max-width: 906px) {
@@ -3502,6 +3509,22 @@ form div label{
       width: 100%; 
       height: 46vw;
     }
+    .analytic{
+      width: 100%;
+    }
+    .analytic > div:first-child{
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+    .analytic .number{
+      padding: 2.7vw 2.5vw;
+    }
+    .visual > .info{
+      display: none!important;
+    }
+    .analytics .info{
+      display: block;
+    }
 }
 @media (max-width: 700px) {
     body{
@@ -3509,7 +3532,7 @@ form div label{
     }
     h2{
         font-size: 0.7em;
-    }
+    }    
 }
 @media(max-width: 667px) {
     .numbersWrap{
@@ -3526,7 +3549,7 @@ form div label{
     .topPanel span{
         cursor: pointer;
         padding-right: 20px;
-    }
+    } 
     .topPanel:after{
         content: '';
         position: absolute;
@@ -3559,6 +3582,10 @@ form div label{
     }
     .block2{
       height: 363px;
+    }
+    #donutchart3{
+      width: 300px!important;
+      height: 240px!important;
     }
 }
 @media(max-width: 544px){
@@ -3681,6 +3708,9 @@ form div label{
         height: 12px;
         margin-left: 2vw;
     }
+    .analytic .number{
+      padding: 5.7vw 5.5vw;
+    }
 }
 @media(max-width: 408px) {
     body{
@@ -3753,6 +3783,10 @@ form div label{
     #chart_div2{
       width: 100%; 
       height: 66vw;
+    }
+    #donutchart3{
+      width: 240px!important;
+      height: 240px!important;
     }
 }
 @media(max-width: 320px) {
